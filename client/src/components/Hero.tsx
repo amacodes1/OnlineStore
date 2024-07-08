@@ -18,7 +18,10 @@ export default function Hero() {
             Explore our Products
           </div>
         </div>
-        <div className="IconChevronRight w-[35px] h-[35px] px-2 py-[5px] bg-emerald-400 rounded-[99px] justify-center items-center gap-2.5 flex" />
+        <img
+          className="IconChevronRight w-[35px] h-[35px] px-2 py-[5px] bg-green500 rounded-[99px] justify-center items-center gap-2.5 flex"
+          src="../images/arrow-right.png"
+        />
       </div>
     </div>
   );

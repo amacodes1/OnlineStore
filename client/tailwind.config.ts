@@ -17,14 +17,21 @@ const config: Config = {
     },
 
     colors: {
-      paleGreen: "#C1EFDA",
-      dark400: "#333D39",
+      white: "#FFFFFF",
+      white25: "#FFFFFF40",
+      white0: "#FFFFFF00",
       dark: "#28303F",
       dark50: "#E6E7E6",
-      white: "#FFFFFF",
+      dark400: "#333D39",
+      gray50: "#FBFBFB",
       gray100: "#F3F5F6",
+      gray200: "#EEEEEE",
+      gray800: "#777777",
+      paleGreen: "#C1EFDA",
       green50: "#EBFAF3",
       green500: "#38CB89",
+      green800: "#1F704B",
+      gold: "#FFB800",
     },
 
     fontFamily: {
