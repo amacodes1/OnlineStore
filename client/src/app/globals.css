@@ -7,15 +7,3 @@
 body {
   @apply w-[390px] h-[6720px] relative bg-white;
 }
-
-/* .infoBar {
-  @apply w-auto h-auto px-8 py-2 justify-center items-center gap-6 inline-flex bg-paleGreen;
-} */
-
-/* .infoBar {
-  @apply w-[390px] h-8 px-8 py-2 bg-paleGreen justify-center items-center gap-[22px] inline-flex;
-}
-
-.infoBarContent {
-  @apply justify-center items-start flex gap-2;
-} */
