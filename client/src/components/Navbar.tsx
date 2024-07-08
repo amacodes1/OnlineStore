@@ -34,8 +34,8 @@ export default function Navbar() {
               <div className="ShoppingCart02 w-5 h-5 relative">
                 <img src="../images/shopping-cart-02.png" alt="" />
               </div>
-              <div className="Frame1000001078 p-0.5 left-[8px] top-[2px] justify-center items-center gap-2.5 flex">
-                <div className=" w-5 h-2.5 text-center py-1 bg-green500 rounded-md text-green50 text-xs font-semibold font-Work_Sans leading-[14.40px] left-[356px] top-[15px] absolute">
+              <div className=" p-1 left-[8px] top-[2px] justify-center items-center gap-2.5 flex">
+                <div className=" w-6 h-3 text-center pt-0.5 pb-3.5 bg-green500 rounded-xl text-green50 text-xs font-semibold font-Work_Sans leading-[14.40px] left-[352px] top-[12px] absolute">
                   5
                 </div>
               </div>
