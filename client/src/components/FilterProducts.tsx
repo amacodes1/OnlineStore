@@ -4,7 +4,7 @@ import React from "react";
 export default function FilterProducts() {
   return (
     <div>
-      <div className="Wrapper w-full md:w-[1216px] h-[1800px] md:h-auto px-4 py-20 flex-col justify-center md:justify-between items-center gap-10 inline-flex">
+      <div className="Wrapper w-full lg:w-[1216px] h-[1800px] lg:h-auto px-4 py-20 flex-col justify-center md:justify-between items-center gap-10 inline-flex">
         {/* Header Section */}
         <div className="Header self-stretch h-[106px] flex-col md:flex-row justify-start md:justify-between items-center gap-4 flex">
           <div className="Products text-dark500 text-2xl font-bold font-Work_Sans capitalize md:leading-[48px] leading-normal">
@@ -32,10 +32,10 @@ export default function FilterProducts() {
         </div>
 
         {/* Products Section */}
-        <div className="Products h-[1398px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-start items-start gap-3 ">
+        <div className="Products h-[1398px] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-start items-start gap-3 md:gap-6 ">
           {/* First Card */}
           <div className="Project flex-col justify-start items-start gap-3 inline-flex">
-            <div className="Img self-stretch w-[150px] md:w-[200px] md:h-[308px] h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
+            <div className="Img self-stretch w-[150px] lg:w-[200px] lg:h-[308px] h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
               <Image
                 src="/images/productImg1.png"
                 height={500}
@@ -103,7 +103,7 @@ export default function FilterProducts() {
 
           {/* Second Card */}
           <div className="Project flex-col justify-start items-start gap-3 inline-flex">
-            <div className="Img self-stretch w-[150px] md:w-[200px] md:h-[308px] h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
+            <div className="Img self-stretch w-[150px] lg:w-[200px] lg:h-[308px] h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
               <Image
                 src="/images/productImg2.png"
                 height={500}
@@ -170,7 +170,7 @@ export default function FilterProducts() {
 
           {/* Third Card */}
           <div className="Project flex-col justify-start items-start gap-3 inline-flex">
-            <div className="Img self-stretch w-[150px] md:w-[200px] md:h-[308px] h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
+            <div className="Img self-stretch w-[150px] lg:w-[200px] lg:h-[308px] h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
               <Image
                 src="/images/productImg3.png"
                 height={500}
@@ -237,7 +237,7 @@ export default function FilterProducts() {
 
           {/* Forth Card */}
           <div className="Project  flex-col justify-start items-start gap-3 inline-flex">
-            <div className="Img self-stretch w-[150px] md:w-[200px] md:h-[308px] h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
+            <div className="Img self-stretch w-[150px] lg:w-[200px] lg:h-[308px] h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
               <Image
                 src="/images/productImg4.png"
                 height={500}
@@ -304,7 +304,7 @@ export default function FilterProducts() {
 
           {/* Fifth Card */}
           <div className="Project flex-col justify-start items-start gap-3 inline-flex">
-            <div className="Img self-stretch w-[150px] md:w-[200px] md:h-[308px] h-[188px] bg-black/opacity-20 rounded-2xl flex-col justify-start items-start gap-2.5 flex">
+            <div className="Img self-stretch w-[150px] lg:w-[200px] lg:h-[308px] h-[188px] bg-black/opacity-20 rounded-2xl flex-col justify-start items-start gap-2.5 flex">
               <Image
                 src="/images/productImg5.png"
                 height={500}
@@ -371,7 +371,7 @@ export default function FilterProducts() {
 
           {/* Sixth Card */}
           <div className="Project flex-col justify-start items-start gap-3 inline-flex">
-            <div className="Img self-stretch w-[150px] md:w-[200px] md:h-[308px] h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
+            <div className="Img self-stretch w-[150px] lg:w-[200px] lg:h-[308px] h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
               <Image
                 src="/images/productImg6.png"
                 height={500}
@@ -438,7 +438,7 @@ export default function FilterProducts() {
 
           {/* Seventh Card */}
           <div className="Project flex-col justify-start items-start gap-3 inline-flex">
-            <div className="Img self-stretch w-[150px] md:w-[200px] md:h-[308px] h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
+            <div className="Img self-stretch w-[150px] lg:w-[200px] lg:h-[308px] h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
               <Image
                 src="/images/productImg7.png"
                 height={500}
@@ -505,7 +505,7 @@ export default function FilterProducts() {
 
           {/* Eight Card */}
           <div className="Project flex-col justify-start items-start gap-3 inline-flex">
-            <div className="Img self-stretch w-[150px] md:w-[200px] md:h-[308px] h-[188px] bg-black/opacity-20 rounded-2xl flex-col justify-start items-start gap-2.5 flex">
+            <div className="Img self-stretch w-[150px] lg:w-[200px] lg:h-[308px] h-[188px] bg-black/opacity-20 rounded-2xl flex-col justify-start items-start gap-2.5 flex">
               <Image
                 src="/images/productImg8.png"
                 height={500}
@@ -572,7 +572,7 @@ export default function FilterProducts() {
 
           {/* Ninth Card */}
           <div className="Project flex-col justify-start items-start gap-3 inline-flex">
-            <div className="Img self-stretch w-[150px] md:w-[200px] md:h-[308px] h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
+            <div className="Img self-stretch w-[150px] lg:w-[200px] lg:h-[308px] h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
               <Image
                 src="/images/productImg9.png"
                 height={500}
@@ -639,7 +639,7 @@ export default function FilterProducts() {
 
           {/* Tenth Card */}
           <div className="Project flex-col justify-start items-start gap-3 inline-flex">
-            <div className="Img self-stretch w-[150px] md:w-[200px] md:h-[308px] h-[188px] bg-black/opacity-30 rounded-2xl flex-col justify-start items-start gap-2.5 flex">
+            <div className="Img self-stretch w-[150px] lg:w-[200px] lg:h-[308px] h-[188px] bg-black/opacity-30 rounded-2xl flex-col justify-start items-start gap-2.5 flex">
               <Image
                 src="/images/productImg10.png"
                 height={500}

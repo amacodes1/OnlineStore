@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -18,7 +19,7 @@ export default function Footer() {
           <div className="Content self-stretch h-[146px] flex-col justify-start items-start gap-8 flex">
             <div className=" px-1 py-2 justify-center items-center gap-2.5 inline-flex">
               <div className="Glaz text-center text-green50 text-lg font-bold font-Work_Sans leading-snug">
-                GLAZ
+                <Link href="/">GLAZ</Link>
               </div>
             </div>
             <div className="Icons justify-start items-start gap-6 inline-flex">
