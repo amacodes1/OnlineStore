@@ -1,5 +1,3 @@
-"use client";
-
 import FeaturedProducts from "@/components/FeaturedProducts";
 import FilterProducts from "@/components/FilterProducts";
 import Hero from "@/components/Hero";
