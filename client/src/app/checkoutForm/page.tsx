@@ -195,19 +195,21 @@ export default function page() {
         </div>
 
         {/* Next Button */}
-        <Link href="/checkoutPaymentProcess">
+        <div>
           <div className="Button self-stretch px-[26px] py-2.5 bg-green500 rounded-lg justify-center items-center gap-2 inline-flex">
             <div className="Next text-center text-green50 text-lg font-semibold font-Work_Sans leading-snug">
-              Next
+              <Link href="/checkoutPaymentProcess">Next</Link>
             </div>
-            <div className="arrowleft w-6 h-6 text-green50 relative left-1 bottom-1 rotate-180">
-              <img
-                className="CarbonArrowLeft text-green50"
-                src="../../images/arrow-left.png"
-              />
+            <div className="arrowleft w-6 h-6 text-green50 relative left-1 bottom-0 rotate-0">
+              <Link href="/checkoutPaymentProcess">
+                <img
+                  className="CarbonArrowLeft text-green50"
+                  src="../../images/arrow-left-white.png"
+                />
+              </Link>
             </div>
           </div>
-        </Link>
+        </div>
       </div>
     </div>
   );

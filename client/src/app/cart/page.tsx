@@ -328,13 +328,11 @@ export default function Cart() {
               </div>
             </div>
 
-            <Link href="/checkoutForm">
-              <div className="Button self-stretch px-[26px] py-2.5 bg-green500 rounded-lg justify-center items-center gap-2 inline-flex">
-                <div className="ShowMore grow shrink basis-0 text-center text-green50 text-lg font-semibold font-Work_Sans leading-snug">
-                  Checkout
-                </div>
+            <div className="Button self-stretch px-[26px] py-2.5 bg-green500 rounded-lg justify-center items-center gap-2 inline-flex">
+              <div className="ShowMore grow shrink basis-0 text-center text-green50 text-lg font-semibold font-Work_Sans leading-snug">
+                <Link href="/checkoutForm">Checkout</Link>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </div>

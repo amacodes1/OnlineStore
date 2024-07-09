@@ -24,6 +24,7 @@ const config: Config = {
       black30: "#0000004D",
       dark: "#28303F",
       dark50: "#E6E7E6",
+      dark200: "#8A908D",
       dark300: "#545D59",
       dark400: "#333D39",
       dark500: "#000D07",
