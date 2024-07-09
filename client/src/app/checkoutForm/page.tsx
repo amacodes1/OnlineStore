@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export default function page() {
+export default function Page() {
   return (
     <div>
       <div className="CheckoutInformation w-full h-[1349px] px-4 pb-20 bg-white flex-col justify-start items-center gap-8 inline-flex">

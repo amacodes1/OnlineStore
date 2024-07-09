@@ -4,7 +4,7 @@ import DirectTransferModal from "@/components/DirectTransferModal";
 import Image from "next/image";
 import React, { useState } from "react";
 
-export default function page() {
+export default function Page() {
   const [directTransferModal, setDirectTransferModal] = useState(false);
   return (
     <div>
