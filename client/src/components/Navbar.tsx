@@ -23,17 +23,17 @@ export default function Navbar() {
             <Image src="/images/menu.png" height={24} width={24} alt="menu" />
           </button>
           <div className="px-1 py-2 flex items-center">
-            <h1 className="text-dark500 text-lg md:text-[34px] font-bold md:font-medium font-['Work Sans'] leading-snug">
+            <h1 className="text-dark500 text-lg md:text-[34px] font-bold md:font-medium font-Work_Sans leading-snug">
               <Link href="/">GLAZ</Link>
             </h1>
           </div>
         </div>
 
         {/* Search Bar on large screen */}
-        <div className="hidden md:flex h-12 px-4 w-1/2 rounded-[99px] border border-neutral-700 items-center mx-auto">
+        <div className="hidden md:flex h-12 px-4 w-1/2 rounded-[99px] border border-gray-300 items-center mx-auto">
           <div className="flex items-center gap-1 flex-grow p-2">
             <div className="flex items-center gap-2.5 flex-grow">
-              <span className="text-zinc-600 text-base font-normal font-['Work Sans'] leading-tight">
+              <span className="text-zinc-600 text-base font-normal font-Work_Sans leading-tight">
                 Hinted search text|
               </span>
             </div>
@@ -74,7 +74,7 @@ export default function Navbar() {
                     width={20}
                     alt="cart"
                   />
-                  <span className="absolute top-[-10px] right-[-10px] bg-green500 text-green50 text-xs font-semibold rounded-xl py-1 px-2">
+                  <span className="absolute top-[-10px] right-[-10px] bg-green500 text-green50 text-xs font-semibold rounded-xl py-1 px-2 w-6 h-5">
                     5
                   </span>
                 </div>
@@ -94,7 +94,7 @@ export default function Navbar() {
                   width={20}
                   alt="cart"
                 />
-                <span className="absolute top-[-10px] right-[-10px] bg-green500 text-green50 text-xs font-semibold rounded-xl p-1">
+                <span className="absolute top-[-10px] right-[-10px] bg-green500 text-green50 text-xs font-semibold rounded-xl py-1 px-2 w-6 h-5 ">
                   5
                 </span>
               </div>
