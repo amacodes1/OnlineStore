@@ -4,7 +4,7 @@ import React from "react";
 export default function Cart() {
   return (
     <div>
-      <div className="Cart w-[100%] h-[100%] px-4 pt-28 pb-20 bg-white flex-col justify-start items-center gap-4 inline-flex">
+      <div className="Cart w-full h-[100%] px-4 pt-28 pb-20 bg-white flex-col justify-start items-center gap-4 inline-flex">
         <div className="Summary self-stretch h-[559px] flex-col justify-start items-start flex">
           <div className="Title self-stretch justify-start items-center gap-4 inline-flex">
             <div className="Cart grow shrink basis-0 text-dark400 text-2xl font-medium font-Work_Sans leading-[34px]">
@@ -327,11 +327,14 @@ export default function Cart() {
                 </div>
               </div>
             </div>
-            <div className="Button self-stretch px-[26px] py-2.5 bg-green500 rounded-lg justify-center items-center gap-2 inline-flex">
-              <div className="ShowMore grow shrink basis-0 text-center text-green50 text-lg font-semibold font-Work_Sans leading-snug">
-                Checkout
+
+            <Link href="/checkoutForm">
+              <div className="Button self-stretch px-[26px] py-2.5 bg-green500 rounded-lg justify-center items-center gap-2 inline-flex">
+                <div className="ShowMore grow shrink basis-0 text-center text-green50 text-lg font-semibold font-Work_Sans leading-snug">
+                  Checkout
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
