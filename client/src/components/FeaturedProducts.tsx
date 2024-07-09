@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function FeaturedProducts() {
@@ -37,6 +38,7 @@ export default function FeaturedProducts() {
                   New
                 </div>
               </div>
+
               <div className="Add w-[50px] h-[50px] p-[13px] bg-white25 rounded-[32px] justify-center items-center flex">
                 <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
               </div>

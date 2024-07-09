@@ -113,7 +113,7 @@ export default function DirectTransferModal({
             </div>
             <div className="Button self-stretch px-[26px] py-2.5 bg-green500 rounded-lg justify-center items-center gap-2 inline-flex">
               <div className="ShowMore grow shrink basis-0 text-center text-green50 text-lg font-semibold font-Work_Sans leading-snug">
-                <Link href="/checkoutConfirmation"></Link>I have made payment
+                <Link href="/checkoutConfirmation">I have made payment</Link>
               </div>
             </div>
           </div>
