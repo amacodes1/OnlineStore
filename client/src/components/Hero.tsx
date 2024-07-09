@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div>
       <Image
-        className="HeroImg w-[390px] h-[670px] p-2.5"
+        className="HeroImg w-full h-[670px] p-2.5"
         src="/images/hero-mobile.png"
         height={500}
         width={500}

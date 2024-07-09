@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function DirectTransferModal({
@@ -30,7 +31,7 @@ export default function DirectTransferModal({
           >
             x
           </p>
-          <div className="DirectTransferModal w-[358px] h-[484px] px-4 py-6 bg-gray50 rounded-2xl flex-col justify-start items-start gap-4 inline-flex">
+          <div className="DirectTransferModal w-full h-[484px] px-4 py-6 bg-gray50 rounded-2xl flex-col justify-start items-start gap-4 inline-flex">
             <div className="Title self-stretch py-2 justify-end items-center gap-4 inline-flex">
               <div className="OrderSummary grow shrink basis-0 text-dark400 text-xl font-semibold font-Work_Sans leading-normal">
                 Order Summary
@@ -112,7 +113,7 @@ export default function DirectTransferModal({
             </div>
             <div className="Button self-stretch px-[26px] py-2.5 bg-green500 rounded-lg justify-center items-center gap-2 inline-flex">
               <div className="ShowMore grow shrink basis-0 text-center text-green50 text-lg font-semibold font-Work_Sans leading-snug">
-                I have made payment
+                <Link href="/checkoutConfirmation"></Link>I have made payment
               </div>
             </div>
           </div>

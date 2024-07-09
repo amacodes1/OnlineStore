@@ -5,7 +5,7 @@ export default function FeaturedProducts() {
   return (
     <div>
       {/* Heading */}
-      <div className="FeaturedProducts w-[390px] h-[1683px] px-4 pt-20 pb-10 flex-col justify-center items-center gap-[23px] inline-flex">
+      <div className="FeaturedProducts w-full h-[1683px] px-4 pt-20 pb-10 flex-col justify-center items-center gap-[23px] inline-flex">
         <div className="Heading self-stretch h-[102px] flex-col justify-start items-center gap-4 flex">
           <div className="Title self-stretch text-center text-dark text-2xl font-medium font-Work_Sans leading-[44px]">
             Featured Products

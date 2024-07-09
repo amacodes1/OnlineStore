@@ -28,9 +28,12 @@ export default function Page() {
               <div className="h-[57px] justify-between items-center flex">
                 <div className="Step1 flex-col justify-start items-center gap-2 -mr-6 inline-flex">
                   <div className="ProcessCheckIconFill w-8 h-8 p-2 bg-green500 rounded-[40px] flex-col justify-center items-center gap-2.5 flex">
-                    <img
+                    <Image
                       className="IconsCheckLine w-8 h-8 relative"
-                      src="../../images/check-icon.png"
+                      src="/images/check-icon.png"
+                      height={500}
+                      width={500}
+                      alt="line"
                     />
                   </div>
                   <div className="Information text-center text-gray600 text-sm font-semibold font-Work_Sans leading-[16.80px]">
@@ -65,7 +68,7 @@ export default function Page() {
                   alt="line"
                 />
 
-                <div className="Step3 w-[102px] flex-col justify-start items-center gap-2 -ml-8 inline-flex">
+                <div className="Step3 w-full flex-col justify-start items-center gap-2 -ml-8 inline-flex">
                   <div className="ProcessCheckIconFill w-8 h-8 p-2 bg-gray500 rounded-[40px] flex-col justify-center items-center gap-2.5 flex">
                     <div className=" text-center text-green50 text-base font-bold font-Work_Sans leading-tight">
                       3
@@ -87,9 +90,12 @@ export default function Page() {
         <div className="Content self-stretch h-[364px] flex-col justify-start items-start gap-4 flex">
           <div className="RadioButton self-stretch p-4 bg-gray200 rounded-2xl justify-start items-start gap-3 inline-flex">
             <div className="RadioButton w-[18px] h-[18px] relative rounded-[100px] border border-dark400">
-              <img
+              <Image
                 className="Check w-3 h-3 left-[2px] top-[2px] absolute bg-dark400 rounded-full"
-                src="../../images/radio-button.png"
+                src="/images/radio-button.png"
+                height={500}
+                width={500}
+                alt="line"
               />
             </div>
             <div className="DirectTransferTitle grow shrink basis-0 flex-col justify-center items-start gap-3 inline-flex">

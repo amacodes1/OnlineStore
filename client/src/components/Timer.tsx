@@ -3,7 +3,7 @@ import React from "react";
 export default function Timer() {
   return (
     <div>
-      <div className="Content w-[390px] h-[371px] px-8 py-20 bg-dark500 flex-col justify-center items-start gap-10 inline-flex">
+      <div className="Content w-full h-[371px] px-8 py-20 bg-dark500 flex-col justify-center items-start gap-10 inline-flex">
         <div className="Title self-stretch h-[65px] flex-col justify-start items-start gap-2 flex">
           <div className="Title self-stretch">
             <span className="text-green200 text-[40px] font-extrabold font-Work_Sans leading-[38px]">

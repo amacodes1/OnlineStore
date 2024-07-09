@@ -4,7 +4,7 @@ import React from "react";
 export default function FilterProducts() {
   return (
     <div>
-      <div className="Wrapper w-[390px] h-[1800px] px-4 py-20 flex-col justify-center items-center gap-10 inline-flex">
+      <div className="Wrapper w-full h-[1800px] px-4 py-20 flex-col justify-center items-center gap-10 inline-flex">
         {/* Header Section */}
         <div className="Header self-stretch h-[106px] flex-col justify-start items-center gap-4 flex">
           <div className="Products text-dark500 text-2xl font-bold font-Work_Sans capitalize leading-normal">

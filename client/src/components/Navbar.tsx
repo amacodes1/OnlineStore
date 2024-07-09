@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <div>
       <div className="Person w-6 h-6 left-[291px] top-[58px] absolute" />
-      <div className="Navbar bg-white w-[390px] h-[60px] px-4 py-2 left-0 top-[32px] absolute justify-between items-center inline-flex">
+      <div className="Navbar bg-white w-full h-[60px] px-4 py-2 left-0 top-[32px] absolute justify-between items-center inline-flex">
         <div className="justify-start items-center flex">
           <div className="NavMenuButton px-1 py-2 rounded-lg justify-center items-center gap-2 flex">
             <div className="Menu w-6 h-6 relative">
