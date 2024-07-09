@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Newsletter() {
@@ -25,9 +26,12 @@ export default function Newsletter() {
             </div>
           </div>
         </div>
-        <img
+        <Image
           className="Image self-stretch h-[349px]"
-          src="../images/newsletterImg.png"
+          src="/images/newsletterImg.png"
+          height={500}
+          width={500}
+          alt="ln"
         />
       </div>
     </div>

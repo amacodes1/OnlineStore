@@ -1,6 +1,7 @@
 "use client";
 
 import DirectTransferModal from "@/components/DirectTransferModal";
+import Image from "next/image";
 import React, { useState } from "react";
 
 export default function page() {
@@ -37,11 +38,14 @@ export default function page() {
                   </div>
                 </div>
 
-                <img
+                <Image
                   className="text-gray500 pb-5 w-24"
-                  src="../../images/line-icon-green.png"
-                  alt=""
+                  src="/images/line-icon-green.png"
+                  height={500}
+                  width={500}
+                  alt="line"
                 />
+
                 <div className="Step2 w-[71px] flex-col justify-start items-center gap-2 -ml-4 -mr-4 inline-flex">
                   <div className="ProcessCheckIconFill w-8 h-8 p-2 bg-green500 rounded-[40px] flex-col justify-center items-center gap-2.5 flex">
                     <div className=" text-center text-green50 text-base font-bold font-Work_Sans leading-tight">
@@ -53,11 +57,14 @@ export default function page() {
                   </div>
                 </div>
 
-                <img
+                <Image
                   className="text-gray500 pb-5 w-24"
-                  src="../../images/line-icon.png"
-                  alt=""
+                  src="/images/line-icon.png"
+                  height={500}
+                  width={500}
+                  alt="line"
                 />
+
                 <div className="Step3 w-[102px] flex-col justify-start items-center gap-2 -ml-8 inline-flex">
                   <div className="ProcessCheckIconFill w-8 h-8 p-2 bg-gray500 rounded-[40px] flex-col justify-center items-center gap-2.5 flex">
                     <div className=" text-center text-green50 text-base font-bold font-Work_Sans leading-tight">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function FilterProducts() {
@@ -19,9 +20,12 @@ export default function FilterProducts() {
                   All Category
                 </div>
               </div>
-              <img
+              <Image
                 className="CategoryImg p-2 flex-col justify-center items-center gap-2.5 inline-flex"
-                src="../images/arrow-down.png"
+                src="/images/arrow-down.png"
+                height={500}
+                width={500}
+                alt="arrow down"
               />
             </div>
           </div>
@@ -33,37 +37,53 @@ export default function FilterProducts() {
             {/* First Card */}
             <div className="Project w-[173px] flex-col justify-start items-start gap-3 inline-flex">
               <div className="Img self-stretch h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
-                <img src="../images/productImg1.png" alt="" />
+                <Image
+                  src="/images/productImg1.png"
+                  height={500}
+                  width={500}
+                  alt="glasses"
+                />
+
                 <div className="Add w-10 h-10 p-2 bg-white25 rounded-[32px] justify-center items-center inline-flex">
                   <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
                 </div>
               </div>
               <div className="Info self-stretch h-[70px] flex-col justify-start items-start flex">
                 <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
                 </div>
                 <div className="Styleoptics self-stretch text-dark400 text-base font-semibold font-Work_Sans leading-relaxed">
@@ -85,37 +105,52 @@ export default function FilterProducts() {
             {/* Second Card */}
             <div className="Project w-[173px] flex-col justify-start items-start gap-3 inline-flex">
               <div className="Img self-stretch h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
-                <img src="../images/productImg2.png" alt="" />
+                <Image
+                  src="/images/productImg2.png"
+                  height={500}
+                  width={500}
+                  alt="glasses"
+                />
                 <div className="Add w-10 h-10 p-2 bg-white25 rounded-[32px] justify-center items-center inline-flex">
                   <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
                 </div>
               </div>
               <div className="Info self-stretch h-[70px] flex-col justify-start items-start flex">
                 <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
                 </div>
                 <div className="CasualDarkShade self-stretch text-dark400 text-base font-semibold font-Work_Sans leading-relaxed">
@@ -139,37 +174,52 @@ export default function FilterProducts() {
             {/* Third Card */}
             <div className="Project w-[173px] flex-col justify-start items-start gap-3 inline-flex">
               <div className="Img self-stretch h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
-                <img src="../images/productImg3.png" alt="" />
+                <Image
+                  src="/images/productImg3.png"
+                  height={500}
+                  width={500}
+                  alt="glasses"
+                />
                 <div className="Add w-10 h-10 p-2 bg-white25 rounded-[32px] justify-center items-center inline-flex">
                   <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
                 </div>
               </div>
               <div className="Info self-stretch h-[70px] flex-col justify-start items-start flex">
                 <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
                 </div>
                 <div className="SpectraclearLense self-stretch text-dark400 text-base font-semibold font-Work_Sans leading-relaxed">
@@ -191,37 +241,52 @@ export default function FilterProducts() {
             {/* Forth Card */}
             <div className="Project w-[173px] flex-col justify-start items-start gap-3 inline-flex">
               <div className="Img self-stretch h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
-                <img src="../images/productImg4.png" alt="" />
+                <Image
+                  src="/images/productImg4.png"
+                  height={500}
+                  width={500}
+                  alt="glasses"
+                />
                 <div className="Add w-10 h-10 p-2 bg-white25 rounded-[32px] justify-center items-center inline-flex">
                   <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
                 </div>
               </div>
               <div className="Info self-stretch h-[70px] flex-col justify-start items-start flex">
                 <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
                 </div>
                 <div className="BlueLightBlocker self-stretch text-dark400 text-base font-semibold font-Work_Sans leading-relaxed">
@@ -245,37 +310,52 @@ export default function FilterProducts() {
             {/* Fifth Card */}
             <div className="Project w-[173px] flex-col justify-start items-start gap-3 inline-flex">
               <div className="Img self-stretch h-[188px] bg-black/opacity-20 rounded-2xl flex-col justify-start items-start gap-2.5 flex">
-                <img src="../images/productImg5.png" alt="" />
+                <Image
+                  src="/images/productImg5.png"
+                  height={500}
+                  width={500}
+                  alt="glasses"
+                />
                 <div className="Add w-10 h-10 p-2 bg-white25 rounded-[32px] justify-center items-center inline-flex">
                   <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
                 </div>
               </div>
               <div className="Info self-stretch h-[70px] flex-col justify-start items-start flex">
                 <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
                 </div>
                 <div className="Trendlens self-stretch text-dark400 text-base font-semibold font-Work_Sans leading-relaxed">
@@ -297,37 +377,52 @@ export default function FilterProducts() {
             {/* Sixth Card */}
             <div className="Project w-[173px] flex-col justify-start items-start gap-3 inline-flex">
               <div className="Img self-stretch h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
-                <img src="../images/productImg1.png" alt="" />
+                <Image
+                  src="/images/productImg6.png"
+                  height={500}
+                  width={500}
+                  alt="glasses"
+                />
                 <div className="Add w-10 h-10 p-2 bg-white25 rounded-[32px] justify-center items-center inline-flex">
                   <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
                 </div>
               </div>
               <div className="Info self-stretch h-[70px] flex-col justify-start items-start flex">
                 <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
                 </div>
                 <div className="Sleeksight self-stretch text-dark400 text-base font-semibold font-Work_Sans leading-relaxed">
@@ -351,37 +446,52 @@ export default function FilterProducts() {
             {/* Seventh Card */}
             <div className="Project w-[173px] flex-col justify-start items-start gap-3 inline-flex">
               <div className="Img self-stretch h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
-                <img src="../images/productImg7.png" alt="" />
+                <Image
+                  src="/images/productImg7.png"
+                  height={500}
+                  width={500}
+                  alt="glasses"
+                />
                 <div className="Add w-10 h-10 p-2 bg-white25 rounded-[32px] justify-center items-center inline-flex">
                   <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
                 </div>
               </div>
               <div className="Info self-stretch h-[70px] flex-col justify-start items-start flex">
                 <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
                 </div>
                 <div className="Eliteeyes self-stretch text-dark400 text-base font-semibold font-Work_Sans leading-relaxed">
@@ -403,37 +513,52 @@ export default function FilterProducts() {
             {/* Eight Card */}
             <div className="Project w-[173px] flex-col justify-start items-start gap-3 inline-flex">
               <div className="Img self-stretch h-[188px] bg-black/opacity-20 rounded-2xl flex-col justify-start items-start gap-2.5 flex">
-                <img src="../images/productImg8.png" alt="" />
+                <Image
+                  src="/images/productImg8.png"
+                  height={500}
+                  width={500}
+                  alt="glasses"
+                />
                 <div className="Add w-10 h-10 p-2 bg-white25 rounded-[32px] justify-center items-center inline-flex">
                   <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
                 </div>
               </div>
               <div className="Info self-stretch h-[70px] flex-col justify-start items-start flex">
                 <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
                 </div>
                 <div className="PureVision self-stretch text-dark400 text-base font-semibold font-Work_Sans leading-relaxed">
@@ -456,37 +581,52 @@ export default function FilterProducts() {
             {/* Ninth Card */}
             <div className="Project w-[173px] flex-col justify-start items-start gap-3 inline-flex">
               <div className="Img self-stretch h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
-                <img src="../images/productImg9.png" alt="" />
+                <Image
+                  src="/images/productImg9.png"
+                  height={500}
+                  width={500}
+                  alt="glasses"
+                />
                 <div className="Add w-10 h-10 p-2 bg-white25 rounded-[32px] justify-center items-center inline-flex">
                   <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
                 </div>
               </div>
               <div className="Info self-stretch h-[70px] flex-col justify-start items-start flex">
                 <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
                 </div>
                 <div className="Chicframes self-stretch text-dark400 text-base font-semibold font-Work_Sans leading-relaxed">
@@ -508,37 +648,52 @@ export default function FilterProducts() {
             {/* Tenth Card */}
             <div className="Project w-[173px] flex-col justify-start items-start gap-3 inline-flex">
               <div className="Img self-stretch h-[188px] bg-black/opacity-30 rounded-2xl flex-col justify-start items-start gap-2.5 flex">
-                <img src="../images/productImg10.png" alt="" />
+                <Image
+                  src="/images/productImg10.png"
+                  height={500}
+                  width={500}
+                  alt="glasses"
+                />
                 <div className="Add w-10 h-10 p-2 bg-white25 rounded-[32px] justify-center items-center inline-flex">
                   <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
                 </div>
               </div>
               <div className="Info self-stretch h-[70px] flex-col justify-start items-start flex">
                 <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
-                  <img
+                  <Image
                     className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="../images/Star-Icon.png"
-                    alt=""
+                    src="/images/Star-Icon.png"
+                    height={500}
+                    width={500}
+                    alt="star"
                   />
                 </div>
                 <div className="UrbanopticsLense self-stretch text-dark400 text-base font-semibold font-Work_Sans leading-relaxed">
@@ -563,7 +718,12 @@ export default function FilterProducts() {
         <div className="NavigationControls self-stretch rounded-md justify-between items-center inline-flex">
           <div className=" w-14 h-14 p-2.5 bg-gray600 rounded-lg flex-col justify-center items-center gap-2.5 inline-flex">
             <div className="ArrowLeft origin-top-left text-dark rotate-0 w-[13.55px] h-[16.50px] relative">
-              <img src="../images/arrow-left.png" alt="" />
+              <Image
+                src="/images/arrow-left.png"
+                height={500}
+                width={500}
+                alt="glasses"
+              />
             </div>
           </div>
           <div className="Pagination justify-start items-center gap-6 flex">
@@ -592,7 +752,12 @@ export default function FilterProducts() {
           </div>
           <div className="w-14 h-14 p-2.5 bg-green400 rounded-lg flex-col justify-center items-center gap-2.5 inline-flex">
             <div className="ArrowRight origin-top-left text-white -rotate-0 w-[13.55px] h-[16.50px] relative">
-              <img src="../images/arrow-right-hand.png" alt="" />
+              <Image
+                src="/images/arrow-right-hand.png"
+                height={500}
+                width={500}
+                alt="glasses"
+              />
             </div>
           </div>
         </div>

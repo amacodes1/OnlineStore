@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Offers() {
@@ -11,11 +12,14 @@ export default function Offers() {
           <div className="Row1 self-stretch justify-start items-start gap-3 inline-flex">
             {/* First Card */}
             <div className="Card01 grow shrink basis-0 px-4 py-8 bg-gray100 rounded-2xl flex-col justify-start items-start gap-4 inline-flex">
-              <img
+              <Image
                 className="CardImg w-12 h-12 relative"
-                src="../images/van-icon.png"
-                alt=""
+                src="/images/van-icon.png"
+                height={500}
+                width={500}
+                alt="van"
               />
+
               <div className="Text h-[61px] flex-col justify-start items-start gap-1 flex">
                 <div className="FreeShipping text-dark400 text-base font-bold font-Work_Sans leading-tight">
                   Free Shipping
@@ -29,11 +33,14 @@ export default function Offers() {
 
             {/* Second Card */}
             <div className="Card2 grow shrink basis-0 px-4 py-8 bg-gray100 rounded-2xl flex-col justify-start items-start gap-4 inline-flex">
-              <img
+              <Image
                 className="CardImg w-12 h-12 relative"
-                src="../images/outline-money.png"
-                alt=""
+                src="/images/outline-money.png"
+                height={500}
+                width={500}
+                alt="van"
               />
+
               <div className="Text h-[61px] flex-col justify-start items-start gap-1 flex">
                 <div className="MoneyBack text-dark400 text-base font-bold font-Work_Sans leading-tight">
                   Money-back
@@ -49,11 +56,14 @@ export default function Offers() {
           <div className="Row2 self-stretch justify-start items-start gap-3 inline-flex">
             {/* Third Card */}
             <div className="Card4 grow shrink basis-0 px-4 py-8 bg-gray100 rounded-2xl flex-col justify-start items-start gap-4 inline-flex">
-              <img
+              <Image
                 className="CardImg w-12 h-12 relative"
-                src="../images/lock-icon.png"
-                alt=""
+                src="/images/lock-icon.png"
+                height={500}
+                width={500}
+                alt="van"
               />
+
               <div className="Text h-[65px] flex-col justify-start items-start gap-2 flex">
                 <div className="SecurePayments text-dark400 text-base font-bold font-Work_Sans leading-tight">
                   Secure Payments
@@ -67,11 +77,14 @@ export default function Offers() {
 
             {/* Forth Card */}
             <div className="Card3 grow shrink basis-0 px-4 py-8 bg-gray100 rounded-2xl flex-col justify-start items-start gap-4 inline-flex">
-              <img
+              <Image
                 className="CardImg w-12 h-12 relative"
-                src="../images/phone-icon.png"
-                alt=""
+                src="/images/phone-icon.png"
+                height={500}
+                width={500}
+                alt="van"
               />
+
               <div className="Text h-[65px] flex-col justify-start items-start gap-2 flex">
                 <div className="7Support text-dark400 text-base font-bold font-Work_Sans leading-tight">
                   24/7 Support

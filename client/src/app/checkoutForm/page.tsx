@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -7,9 +8,12 @@ export default function page() {
       <div className="CheckoutInformation w-full h-[1349px] px-4 pb-20 bg-white flex-col justify-start items-center gap-8 inline-flex">
         <div className="CheckoutHeader h-[212px] py-4 rounded-2xl flex-col justify-start items-start gap-2 flex">
           <div className="Title self-stretch px-4 py-2 justify-end items-center gap-4 inline-flex">
-            <img
+            <Image
               className="IconsCloseLine w-6 h-6 relative"
-              src="../../images/close.png"
+              src="/images/close.png"
+              height={500}
+              width={500}
+              alt="close icon"
             />
           </div>
           <div className="Steppers self-stretch h-[123px] px-4 pb-2 pt-10 rounded-lg flex-col justify-center items-center gap-4 flex">
@@ -29,11 +33,14 @@ export default function page() {
                   </div>
                 </div>
 
-                <img
+                <Image
                   className="text-gray500 pb-5 w-24"
-                  src="../../images/line-icon.png"
-                  alt=""
+                  src="/images/line-icon.png"
+                  height={500}
+                  width={500}
+                  alt="line"
                 />
+
                 <div className="Step2 w-[71px] flex-col justify-start items-center gap-2 -ml-4 -mr-4 inline-flex">
                   <div className="ProcessCheckIconFill w-8 h-8 p-2 bg-gray500 rounded-[40px] flex-col justify-center items-center gap-2.5 flex">
                     <div className=" text-center text-green50 text-base font-bold font-Work_Sans leading-tight">
@@ -45,11 +52,14 @@ export default function page() {
                   </div>
                 </div>
 
-                <img
+                <Image
                   className="text-gray500 pb-5 w-24"
-                  src="../../images/line-icon.png"
-                  alt=""
+                  src="/images/line-icon.png"
+                  height={500}
+                  width={500}
+                  alt="line"
                 />
+
                 <div className="Step3 w-[102px] flex-col justify-start items-center gap-2 -ml-8 inline-flex">
                   <div className="ProcessCheckIconFill w-8 h-8 p-2 bg-gray500 rounded-[40px] flex-col justify-center items-center gap-2.5 flex">
                     <div className=" text-center text-green50 text-base font-bold font-Work_Sans leading-tight">
@@ -63,7 +73,7 @@ export default function page() {
               </div>
             </div>
           </div>
-          <img className="Divider self-stretch h-px bg-gray200" />
+          <div className="Divider self-stretch h-px bg-gray200" />
         </div>
 
         {/* Information Section */}
@@ -147,9 +157,13 @@ export default function page() {
                 <div className="YourInput grow shrink basis-0 text-gray700 text-base font-normal font-Work_Sans leading-tight">
                   Country
                 </div>
-                <img
-                  className="IconChevronDown w-3 h-2 text-gray500 relative"
-                  src="../../images/arrow-down.png"
+
+                <Image
+                  className="IconDown w-3 h-2 text-gray500 relative"
+                  src="/images/arrow-down.png"
+                  height={500}
+                  width={500}
+                  alt="arrow down"
                 />
               </div>
             </div>

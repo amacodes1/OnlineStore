@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -12,10 +13,14 @@ export default function Cart() {
             </div>
             <Link href="/">
               <div className="Price justify-end items-center gap-2 flex">
-                <img
+                <Image
                   className="IconsCloseLine w-6 h-6 relative"
-                  src="../images/close.png"
+                  src="/images/close.png"
+                  height={500}
+                  width={500}
+                  alt="close"
                 />
+
                 <div className="Close text-right text-gray800 text-base font-normal font-Work_Sans leading-tight">
                   close
                 </div>
@@ -32,9 +37,12 @@ export default function Cart() {
               <div className="CartItem grow shrink basis-0 self-stretch flex-col justify-start items-start gap-2.5 inline-flex">
                 <div className="Content self-stretch justify-start items-center gap-4 inline-flex">
                   <div className="ImagePlaceholder w-[120px] h-[97px] relative">
-                    <img
-                      className="PasteImage w-[120px] h-[97px] left-[-0.50px] top-0 absolute rounded-2xl"
-                      src="../../../images/cartImg1.png"
+                    <Image
+                      className="FirstImage w-[120px] h-[97px] left-[-0.50px] top-0 absolute rounded-2xl"
+                      src="/images/cartImg1.png"
+                      height={500}
+                      width={500}
+                      alt="glasses"
                     />
                   </div>
                   <div className="Info grow shrink basis-0 self-stretch justify-between items-start flex">
@@ -70,17 +78,24 @@ export default function Cart() {
                       </div>
                       <div className="QuantityButtonSmall w-20 h-8 px-2 py-3 mt-2 rounded-lg border border-gray800 flex-col justify-center items-center gap-2.5 flex">
                         <div className="Content w-16 justify-center items-center gap-3 inline-flex">
-                          <img
+                          <Image
                             className="IconMinus w-4 h-4 relative flex-col justify-start items-start flex"
-                            src="../../../images/minus-icon.png"
+                            src="/images/minus-icon.png"
+                            height={500}
+                            width={500}
+                            alt="minus"
                           />
+
                           <div className="GetStarted text-center text-zinc-600 text-xs font-semibold font-Work_Sans leading-tight">
                             2
                           </div>
                           <div className="IconAdd w-4 h-4 relative flex-col justify-start items-start flex">
-                            <img
+                            <Image
                               className="PlusImg w-[14px] h-[14px]"
-                              src="../../../images/plus-icon.png"
+                              src="/images/plus-icon.png"
+                              height={500}
+                              width={500}
+                              alt="plus"
                             />
                           </div>
                         </div>
@@ -100,9 +115,12 @@ export default function Cart() {
               <div className="CartItem grow shrink basis-0 self-stretch flex-col justify-start items-start gap-2.5 inline-flex">
                 <div className="Content self-stretch justify-start items-center gap-4 inline-flex">
                   <div className="ImagePlaceholder w-[120px] h-[114px] justify-center items-center flex">
-                    <img
+                    <Image
                       className="Image w-[120px] h-[114px] rounded-2xl"
-                      src="../../../images/cartImg2.png"
+                      src="/images/cartImg2.png"
+                      height={500}
+                      width={500}
+                      alt="glasses"
                     />
                   </div>
                   <div className="Info grow shrink basis-0 self-stretch justify-between items-start flex">
@@ -138,17 +156,24 @@ export default function Cart() {
                       </div>
                       <div className="QuantityButtonSmall w-20 h-8 px-2 py-3 mt-3 rounded-lg border border-gray800 flex-col justify-center items-center gap-2.5 flex">
                         <div className="Content w-16 justify-center items-center gap-3 inline-flex">
-                          <img
+                          <Image
                             className="IconMinus w-4 h-4 relative flex-col justify-start items-start flex"
-                            src="../../../images/minus-icon.png"
+                            src="/images/minus-icon.png"
+                            height={500}
+                            width={500}
+                            alt="minus"
                           />
+
                           <div className="GetStarted text-center text-zinc-600 text-xs font-semibold font-Work_Sans leading-tight">
                             2
                           </div>
                           <div className="IconAdd w-4 h-4 relative flex-col justify-start items-start flex">
-                            <img
+                            <Image
                               className="PlusImg w-[14px] h-[14px]"
-                              src="../../../images/plus-icon.png"
+                              src="/images/plus-icon.png"
+                              height={500}
+                              width={500}
+                              alt="plus"
                             />
                           </div>
                         </div>
@@ -168,9 +193,12 @@ export default function Cart() {
               <div className="CartItem grow shrink basis-0 self-stretch flex-col justify-start items-start gap-2.5 inline-flex">
                 <div className="Content self-stretch justify-start items-center gap-4 inline-flex">
                   <div className="ImagePlaceholder w-[120px] h-[102px] justify-center items-center flex">
-                    <img
-                      className="PasteImage w-[120px] h-[102px] rounded-2xl"
-                      src="../../../images/cartImg3.png"
+                    <Image
+                      className="Image w-[120px] h-[102px] rounded-2xl"
+                      src="/images/cartImg3.png"
+                      height={500}
+                      width={500}
+                      alt="glasses"
                     />
                   </div>
                   <div className="Info grow shrink basis-0 self-stretch justify-between items-start flex">
@@ -206,17 +234,24 @@ export default function Cart() {
                       </div>
                       <div className="QuantityButtonSmall w-20 h-8 px-2 py-3 mt-3 rounded-lg border border-gray800 flex-col justify-center items-center gap-2.5 flex">
                         <div className="Content w-16 justify-center items-center gap-3 inline-flex">
-                          <img
+                          <Image
                             className="IconMinus w-4 h-4 relative flex-col justify-start items-start flex"
-                            src="../../../images/minus-icon.png"
+                            src="/images/minus-icon.png"
+                            height={500}
+                            width={500}
+                            alt="minus"
                           />
+
                           <div className="GetStarted text-center text-zinc-600 text-xs font-semibold font-Work_Sans leading-tight">
                             2
                           </div>
                           <div className="IconAdd w-4 h-4 relative flex-col justify-start items-start flex">
-                            <img
+                            <Image
                               className="PlusImg w-[14px] h-[14px]"
-                              src="../../../images/plus-icon.png"
+                              src="/images/plus-icon.png"
+                              height={500}
+                              width={500}
+                              alt="plus"
                             />
                           </div>
                         </div>
@@ -245,9 +280,12 @@ export default function Cart() {
                   <div className="Content pt-0.5 pb-[3.50px] justify-center items-start gap-28 flex">
                     <div className="RadioButton self-stretch justify-start items-center gap-3 inline-flex">
                       <div className="RadioButton w-[18px] h-[18px] relative rounded-[100px] border border-gray800">
-                        <img
+                        <Image
                           className="Check w-3 h-3 left-[2px] top-[2px] absolute bg-dark500 rounded-full"
-                          src="../../../images/radio-button.png"
+                          src="/images/radio-button.png"
+                          height={500}
+                          width={500}
+                          alt="radio button"
                         />
                       </div>
                       <div className="FreeShipping text-dark400 text-base font-semibold font-Work_Sans leading-tight">
