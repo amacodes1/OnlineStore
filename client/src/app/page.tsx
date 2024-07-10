@@ -8,7 +8,7 @@ import Timer from "@/components/Timer";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="overflow-x-hidden h-[100%] w-[100%]">
       <Navbar />
       <Hero />
       <FeaturedProducts />

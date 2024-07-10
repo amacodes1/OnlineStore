@@ -14,10 +14,13 @@ export default function Page() {
       />
       <div className="PaymentProcess w-full h-[744px] px-4 pb-20 bg-white flex-col justify-start items-center gap-8 inline-flex">
         <div className="PaymentProcessHeader h-[212px] py-4 rounded-2xl flex-col justify-start items-start gap-2 flex">
-          <div className="Title self-stretch px-4 py-2 justify-end items-center gap-4 inline-flex">
-            <img
+          <div className="Title self-stretch px-4 py-4 justify-end items-center gap-4 inline-flex">
+            <Image
               className="IconsCloseLine w-6 h-6 relative"
-              src="../../images/close.png"
+              src="/images/close.png"
+              height={20}
+              width={20}
+              alt=""
             />
           </div>
           <div className="Steppers self-stretch h-[123px] px-4 pb-2 pt-10 rounded-lg flex-col justify-center items-center gap-4 flex">

@@ -22,7 +22,6 @@ export default function RootLayout({
         className={`${inter.className} overflow-x-hidden h-[100%] w-[100%]`}
       >
         <InfoBar />
-
         {children}
         <Footer />
       </body>
