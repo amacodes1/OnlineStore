@@ -30,10 +30,10 @@ export default function Navbar() {
         </div>
 
         {/* Search Bar on large screen */}
-        <div className="hidden md:flex h-12 px-4 w-1/2 rounded-[99px] border border-gray-300 items-center mx-auto">
+        <div className="hidden md:flex h-12 px-4 w-1/2 rounded-[99px] border border-gray300 items-center mx-auto">
           <div className="flex items-center gap-1 flex-grow p-2">
             <div className="flex items-center gap-2.5 flex-grow">
-              <span className="text-zinc-600 text-base font-normal font-Work_Sans leading-tight">
+              <span className="text-gray800 text-base font-normal font-Work_Sans leading-tight">
                 Hinted search text|
               </span>
             </div>
