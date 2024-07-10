@@ -288,7 +288,7 @@ export default function FilterProducts() {
         </div>
         <div className="Pagination justify-start items-center gap-6 flex">
           <div className="PageIndicator w-[90px] md:w-[200px] h-5 pl-[5px] md:pl-20 pr-2 md:pr-10 justify-center items-center flex">
-            <div className="Text text-center text-dark400 text-sm font-semibold font-Work_Sans leading-tight">
+            <div className="Text text-center text-dark400 text-xs font-semibold font-Work_Sans leading-tight">
               Page 1 of 5
             </div>
           </div>
