@@ -210,7 +210,7 @@ export default function Page() {
 
         {/* Next Button */}
         <div>
-          <div className="Button self-stretch px-[26px] py-2.5 bg-green500 rounded-lg justify-center items-center gap-2 inline-flex">
+          <button className="Button self-stretch px-[26px] py-2.5 bg-green500 rounded-lg justify-center items-center gap-2 inline-flex">
             <div className="Next text-center text-green50 text-lg font-semibold font-Work_Sans leading-snug">
               <Link href="/checkoutPaymentProcess">Next</Link>
             </div>
@@ -222,7 +222,7 @@ export default function Page() {
                 />
               </Link>
             </div>
-          </div>
+          </button>
         </div>
       </div>
     </div>
