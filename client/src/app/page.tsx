@@ -14,8 +14,8 @@ export default function Home() {
       <FeaturedProducts />
       <FilterProducts />
       <Offers />
-      <Timer />
       <Newsletter />
+      <Timer />
     </main>
   );
 }

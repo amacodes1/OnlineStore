@@ -4,7 +4,7 @@ import React from "react";
 export default function Newsletter() {
   return (
     <div>
-      <div className="Newsletter w-full h-[865px] px-6 py-20 bg-green500 flex-col justify-start items-center gap-[52px] inline-flex">
+      <div className="Newsletter w-full h-[865px] px-6 py-20  md:rounded-lg bg-green500 flex-col justify-start items-center gap-[52px] inline-flex">
         <div className="self-stretch h-[305px] flex-col justify-start items-start gap-8 flex">
           <div className="NewsletterText self-stretch text-center text-dark500 text-[34px] font-bold font-Work_Sans leading-[40.80px]">
             Stay updated with Visionary Vibes!

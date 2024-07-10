@@ -32,7 +32,7 @@ export default function FilterProducts() {
         </div>
 
         {/* Products Section */}
-        <div className="Products h-[1398px] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-start items-start gap-3 md:gap-6 ">
+        <div className="Products h-[1398px] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-start items-start gap-3 md:gap-8 ">
           {/* First Card */}
           <div className="Project flex-col justify-start items-start gap-3 inline-flex">
             <div className="Img self-stretch w-[150px] lg:w-[200px] lg:h-[308px] h-[188px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
