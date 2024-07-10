@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Timer() {
@@ -68,6 +69,15 @@ export default function Timer() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="hidden lg:block">
+          <Image
+            className="grow shrink basis-0 h-60 rounded-2xl w-[60%] left-[30%] bottom-[6%] absolute"
+            src="/images/timerImg.png"
+            width={500}
+            height={500}
+            alt="timer Image"
+          />
         </div>
       </div>
     </div>
