@@ -31,7 +31,7 @@ export default function DirectTransferModal({
           >
             x
           </p>
-          <div className="DirectTransferModal w-full h-[484px] px-4 py-6 bg-gray50 rounded-2xl flex-col justify-start items-start gap-4 inline-flex">
+          <div className="DirectTransferModal w-full h-[484px] px-4 py-6 bg-gray100 rounded-2xl flex-col justify-start items-start gap-4 inline-flex">
             <div className="Title self-stretch py-2 justify-end items-center gap-4 inline-flex">
               <div className="OrderSummary grow shrink basis-0 text-dark400 text-xl font-semibold font-Work_Sans leading-normal">
                 Order Summary
