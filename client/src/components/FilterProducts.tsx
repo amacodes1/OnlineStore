@@ -209,7 +209,7 @@ export default function FilterProducts() {
             key={product.id}
             className="Card flex-col justify-start items-start gap-0 inline-flex"
           >
-            <div className="Img self-stretch w-[150px] lg:w-[200px] lg:h-[308px] h-[155px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
+            <div className="Img self-stretch w-[150px] lg:w-[200px] lg:h-[290px] h-[155px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
               <Image
                 src={product.image}
                 height={500}
@@ -220,7 +220,7 @@ export default function FilterProducts() {
                 <div className="IconCartAdd w-6 h-6 relative flex" />
               </div>
             </div>
-            <div className="Info h-[50px] flex flex-col gap-0 leading-tight pt-[10%] lg:pt-[2px]">
+            <div className="Info flex flex-col gap-0 leading-tight pt-[10%] lg:pt-[1%]">
               <div className="RatingRatingGroup flex gap-0.5">
                 <Image
                   className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
