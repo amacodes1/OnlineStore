@@ -220,7 +220,7 @@ export default function FilterProducts() {
                 <div className="IconCartAdd w-6 h-6 relative flex" />
               </div>
             </div>
-            <div className="Info flex flex-col gap-0 leading-tight pt-[10%] lg:pt-[1%]">
+            <div className="Info flex flex-col gap-0 leading-tight pt-[10%] lg:pt-[1px]">
               <div className="RatingRatingGroup flex gap-0.5">
                 <Image
                   className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
