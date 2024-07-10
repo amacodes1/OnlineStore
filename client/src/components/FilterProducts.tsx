@@ -203,13 +203,13 @@ export default function FilterProducts() {
       </div>
 
       {/* Products Section */}
-      <div className="Products grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-start items-start gap-16 md:gap-10 lg:gap-20">
+      <div className="Products grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-start items-start gap-1 md:gap-10 lg:gap-20">
         {filteredProducts.map((product) => (
           <div
             key={product.id}
             className="Card flex-col justify-start items-start gap-0 inline-flex"
           >
-            <div className="Img self-stretch w-[150px] lg:w-[200px] lg:h-[290px] h-[155px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
+            <div className="Img self-stretch w-[155px] lg:w-[200px] lg:h-[290px] h-[160px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
               <Image
                 src={product.image}
                 height={500}
