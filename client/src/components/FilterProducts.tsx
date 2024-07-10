@@ -275,7 +275,7 @@ export default function FilterProducts() {
       </div>
 
       {/* Navigation Section */}
-      <div className="NavigationControls self-stretch rounded-md justify-between items-center inline-flex">
+      <div className="NavigationControls pt-8 self-stretch rounded-md justify-between items-center inline-flex">
         <div className=" w-14 h-14 md:ml-10 p-2 bg-gray600 rounded-lg flex-col justify-center items-center gap-2.5 inline-flex">
           <div className="ArrowLeft  origin-top-left text-dark rotate-0 w-[13.55px] h-[16.50px] relative">
             <Image
