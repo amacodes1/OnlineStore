@@ -40,7 +40,7 @@ export default function Navbar() {
             <div className="flex items-center">
               <div className="w-6 h-6 relative">
                 <Image
-                  src="/images/icon.png"
+                  src="/images/search-icon.png"
                   height={24}
                   width={24}
                   alt="search"
@@ -55,7 +55,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <div className="w-6 h-6 relative">
               <Image
-                src="/images/icon.png"
+                src="/images/search-icon.png"
                 height={24}
                 width={24}
                 alt="search"
