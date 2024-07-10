@@ -3,18 +3,18 @@ import React from "react";
 
 export default function FilterProducts() {
   return (
-    <div>
+    <div className="container">
       <div className="Wrapper w-full lg:w-[1216px] h-[1800px] lg:h-auto px-4 py-20 flex-col justify-center md:justify-between items-center gap-10 inline-flex">
         {/* Header Section */}
-        <div className="Header self-stretch h-[106px] flex-col md:flex-row justify-start md:justify-between items-center gap-4 flex">
-          <div className="Products text-dark500 text-2xl font-bold font-Work_Sans capitalize md:leading-[48px] leading-normal">
+        <div className="Header container self-stretch h-[106px] flex-col md:flex-row justify-start md:justify-between items-center gap-4 flex">
+          <div className="Products text-dark500 text-2xl md:ml-24 font-bold font-Work_Sans capitalize md:leading-[48px] leading-normal">
             50+ Products
           </div>
           <div className="Filter self-stretch h-[66px] flex-col md:flex-row justify-center items-center gap-2 flex">
             <div className="FilterProductsBy text-dark300 text-sm font-normal font-Work_Sans leading-[21px]">
               Filter Products By:
             </div>
-            <div className="Category self-stretch px-4 md:px-10 py-2 md:py-0 rounded-lg border border-dark300 justify-center items-center gap-1 inline-flex">
+            <div className="Category self-stretch px-4 md:px-8 py-2 md:py-0 rounded-lg md:rounded-full border border-dark300 justify-center items-center gap-1 inline-flex">
               <div className=" justify-center items-center gap-2.5 flex">
                 <div className="AllCategory text-dark300 text-sm font-semibold md:font-medium font-Work_Sans leading-tight tracking-tight">
                   All Category
@@ -707,8 +707,8 @@ export default function FilterProducts() {
 
         {/* Navigation Section */}
         <div className="NavigationControls self-stretch rounded-md justify-between items-center inline-flex">
-          <div className=" w-14 h-14 p-2 bg-gray600 rounded-lg flex-col justify-center items-center gap-2.5 inline-flex">
-            <div className="ArrowLeft origin-top-left text-dark rotate-0 w-[13.55px] h-[16.50px] relative">
+          <div className=" w-14 h-14 md:ml-10 p-2 bg-gray600 rounded-lg flex-col justify-center items-center gap-2.5 inline-flex">
+            <div className="ArrowLeft  origin-top-left text-dark rotate-0 w-[13.55px] h-[16.50px] relative">
               <Image
                 src="/images/arrow-left.png"
                 height={500}
@@ -718,7 +718,7 @@ export default function FilterProducts() {
             </div>
           </div>
           <div className="Pagination justify-start items-center gap-6 flex">
-            <div className="PageIndicator w-[87px] h-5 pl-[5px] pr-2 justify-center items-center flex">
+            <div className="PageIndicator w-[90px] md:w-[200px] h-5 pl-[5px] md:pl-20 pr-2 md:pr-10 justify-center items-center flex">
               <div className="Text text-center text-dark400 text-sm font-semibold font-Work_Sans leading-tight">
                 Page 1 of 5
               </div>

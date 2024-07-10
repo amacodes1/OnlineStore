@@ -4,7 +4,7 @@ import React from "react";
 export default function Offers() {
   return (
     <div>
-      <div className="Offers w-full h-[638px] px-4 py-6 md:pt-16 flex-col justify-start items-start gap-[52px] inline-flex">
+      <div className="Offers w-full h-[638px] px-4 md:pl-14 md:pr-5 py-2 md:pt-16 flex-col justify-start items-start gap-[52px] inline-flex">
         <div className="Label w-[321px] md:w-[569px] text-green800 text-[40px] md:text-[50px] font-bold md:font-extrabold font-Work_Sans leading-[48px]">
           We provide the best customer experiences
         </div>
