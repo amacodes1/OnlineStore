@@ -137,7 +137,7 @@ export default function Page() {
           </div>
           <div className="Button self-stretch px-[26px] py-2.5 bg-green500 rounded-lg justify-center items-center gap-2 inline-flex">
             <div
-              className="ContinueToPay grow shrink basis-0 text-center text-green50 text-lg font-semibold font-Work_Sans leading-snug"
+              className="ContinueToPay cursor-pointer grow shrink basis-0 text-center text-green50 text-lg font-semibold font-Work_Sans leading-snug"
               onClick={(e) => {
                 e.preventDefault();
                 setDirectTransferModal(true);
