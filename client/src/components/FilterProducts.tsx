@@ -275,7 +275,7 @@ export default function FilterProducts() {
       </div>
 
       {/* Navigation Section */}
-      <div className="NavigationControls pt-8 self-stretch rounded-md justify-between items-center inline-flex">
+      <div className="NavigationControls pt-8 px-[6%] self-stretch rounded-md justify-between items-center inline-flex">
         <div className=" w-14 h-14 md:ml-10 p-2 bg-gray600 rounded-lg flex-col justify-center items-center gap-2.5 inline-flex">
           <div className="ArrowLeft  origin-top-left text-dark rotate-0 w-[13.55px] h-[16.50px] relative">
             <Image
@@ -288,7 +288,7 @@ export default function FilterProducts() {
         </div>
         <div className="Pagination justify-start items-center gap-6 flex">
           <div className="PageIndicator w-[90px] md:w-[200px] h-5 pl-[5px] md:pl-20 pr-2 md:pr-10 justify-center items-center flex">
-            <div className="Text text-center text-dark400 text-xs font-semibold font-Work_Sans leading-tight">
+            <div className="Text text-center text-dark400 text-xs md:text-sm font-semibold font-Work_Sans leading-tight">
               Page 1 of 5
             </div>
           </div>

@@ -53,7 +53,7 @@ export default function Footer() {
                   alt="ln"
                 />
               </div>
-              <div className="2020GlazAllRightsReserved text-dark300 text-sm font-normal font-['Inter'] leading-tight">
+              <div className="2020GlazAllRightsReserved text-dark300 mt-3 text-sm font-normal font-Work_Sans leading-tight">
                 © 2020 GLAZ. All rights reserved.
               </div>
             </div>
