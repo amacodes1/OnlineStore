@@ -42,7 +42,7 @@ const productData = [
     originalPrice: 140,
     salePrice: 70,
     image: "/images/productImg5.png",
-    category: "category3",
+    category: "category2",
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ const productData = [
     originalPrice: 140,
     salePrice: 70,
     image: "/images/productImg6.png",
-    category: "category3",
+    category: "category1",
   },
   {
     id: 7,
@@ -58,7 +58,7 @@ const productData = [
     originalPrice: 140,
     salePrice: 70,
     image: "/images/productImg7.png",
-    category: "category3",
+    category: "category1",
   },
   {
     id: 8,
@@ -66,7 +66,7 @@ const productData = [
     originalPrice: 140,
     salePrice: 70,
     image: "/images/productImg8.png",
-    category: "category3",
+    category: "category2",
   },
   {
     id: 9,
@@ -82,7 +82,7 @@ const productData = [
     originalPrice: 140,
     salePrice: 70,
     image: "/images/productImg10.png",
-    category: "category3",
+    category: "category2",
   },
   {
     id: 11,
@@ -90,7 +90,7 @@ const productData = [
     originalPrice: 140,
     salePrice: 70,
     image: "/images/productImg11.png",
-    category: "category3",
+    category: "category1",
   },
   {
     id: 12,
@@ -106,7 +106,7 @@ const productData = [
     originalPrice: 140,
     salePrice: 70,
     image: "/images/productImg13.png",
-    category: "category3",
+    category: "category2",
   },
   {
     id: 14,
@@ -114,7 +114,7 @@ const productData = [
     originalPrice: 140,
     salePrice: 70,
     image: "/images/productImg14.png",
-    category: "category3",
+    category: "category2",
   },
   {
     id: 15,
@@ -122,7 +122,7 @@ const productData = [
     originalPrice: 140,
     salePrice: 70,
     image: "/images/productImg15.png",
-    category: "category3",
+    category: "category1",
   },
   {
     id: 16,
@@ -138,7 +138,7 @@ const productData = [
     originalPrice: 140,
     salePrice: 70,
     image: "/images/productImg17.png",
-    category: "category3",
+    category: "category1",
   },
   {
     id: 18,
@@ -146,7 +146,7 @@ const productData = [
     originalPrice: 140,
     salePrice: 70,
     image: "/images/productImg18.png",
-    category: "category3",
+    category: "category1",
   },
   {
     id: 19,
@@ -154,7 +154,7 @@ const productData = [
     originalPrice: 140,
     salePrice: 70,
     image: "/images/productImg19.png",
-    category: "category3",
+    category: "category2",
   },
   {
     id: 20,
@@ -203,7 +203,7 @@ export default function FilterProducts() {
       </div>
 
       {/* Products Section */}
-      <div className="Products grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-start items-start gap-3 md:gap-10 lg:gap-20">
+      <div className="Products grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-start items-start gap-16 md:gap-10 lg:gap-20">
         {filteredProducts.map((product) => (
           <div
             key={product.id}
@@ -220,7 +220,7 @@ export default function FilterProducts() {
                 <div className="IconCartAdd w-6 h-6 relative flex" />
               </div>
             </div>
-            <div className="Info h-[50px] flex flex-col gap-1">
+            <div className="Info h-[50px] flex flex-col gap-0 leading-tight pt-[10%] lg:pt-[2px]">
               <div className="RatingRatingGroup flex gap-0.5">
                 <Image
                   className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"

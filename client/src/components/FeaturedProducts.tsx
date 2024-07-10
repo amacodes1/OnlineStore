@@ -21,9 +21,9 @@ export default function FeaturedProducts() {
         </div>
 
         {/* Products */}
-        <div className="Products self-stretch h-auto flex-row justify-start items-start gap-2 md:gap-4 lg:gap-8 flex">
+        <div className="Products self-stretch h-auto flex-row  gap-12 md:gap-4 lg:gap-8 flex">
           {/* First Image Section */}
-          <div className="ImageSection flex-grow flex-shrink w-1/3 h-[458px] flex-col justify-start items-start gap-4">
+          <div className="ImageSection flex-grow flex-shrink w-1/3 h-[458px] gap-4">
             <Link href="/cart">
               <div className="Image self-stretch rounded-2xl justify-start items-start gap-2.5 inline-flex">
                 <Image
