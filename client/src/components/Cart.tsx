@@ -1,8 +1,17 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import { useCart } from "./CartProvider";
+import { useRouter } from "next/navigation";
 
 export default function Cart() {
+  const { isCartOpen, closeCart } = useCart();
+  const router = useRouter();
+
+  const handleCheckout = () => {
+    closeCart();
+    router.push("/checkoutForm");
+  };
+
   return (
     <div>
       <div className="Cart w-full h-[100%] px-4 pt-28 pb-20 bg-white flex-col justify-start items-center gap-4 inline-flex">
@@ -11,7 +20,10 @@ export default function Cart() {
             <div className="Cart grow shrink basis-0 text-dark400 text-2xl font-medium font-Work_Sans leading-[34px]">
               Cart
             </div>
-            <Link href="/">
+            <button
+              onClick={closeCart}
+              className="relative py-2 flex items-center gap-0.5"
+            >
               <div className="Price justify-end items-center gap-2 flex">
                 <Image
                   className="IconsCloseLine w-6 h-6 relative"
@@ -25,7 +37,7 @@ export default function Cart() {
                   close
                 </div>
               </div>
-            </Link>
+            </button>
           </div>
           <img className="Divider self-stretch h-px bg-gray200" />
           <div className="ProductsAdded self-stretch pt-1.5 h-[34px] text-gray800 text-base font-normal font-Work_Sans leading-tight">
@@ -367,9 +379,12 @@ export default function Cart() {
             </div>
 
             <div className="Button self-stretch px-[26px] py-2.5 bg-green500 rounded-lg justify-center items-center gap-2 inline-flex">
-              <div className="ShowMore grow shrink basis-0 text-center text-green50 text-lg font-semibold font-Work_Sans leading-snug">
-                <Link href="/checkoutForm">Checkout</Link>
-              </div>
+              <button
+                onClick={handleCheckout}
+                className="ShowMore grow shrink basis-0 text-center text-green50 text-lg font-semibold font-Work_Sans leading-snug"
+              >
+                Checkout
+              </button>
             </div>
           </div>
         </div>

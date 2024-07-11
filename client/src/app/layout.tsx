@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import InfoBar from "@/components/InfoBar";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         className={`${inter.className} overflow-x-hidden h-[100%] w-[100%]`}
       >
         <InfoBar />
+        <Navbar />
         {children}
         <Footer />
       </body>
