@@ -6,8 +6,8 @@ export default function Page() {
   return (
     <div>
       <div className="CheckoutInformation w-full h-[1349px] px-4 pb-20 bg-white flex-col justify-start items-center gap-8 inline-flex">
-        <div className="CheckoutHeader h-[212px] py-4 rounded-2xl flex-col justify-start items-start gap-2 flex">
-          <div className="Title self-stretch px-4 py-2 justify-end items-center gap-4 inline-flex">
+        <div className="CheckoutHeader h-[212px] py-4 md:py-20  rounded-2xl flex-col justify-start items-start gap-2 flex">
+          <div className="Title md:hidden self-stretch px-4 py-2 justify-end items-center gap-4 inline-flex">
             <Image
               className="IconsCloseLine w-6 h-6 relative"
               src="/images/close.png"
@@ -77,7 +77,7 @@ export default function Page() {
         </div>
 
         {/* Form Mobile */}
-        <div className="formMobile block lg:hidden">
+        <div className="formMobile px-[2%] block lg:hidden">
           {/* Information Section */}
           <div className="Form self-stretch h-[406px] bg-white rounded-[10px] flex-col justify-start items-start gap-6 flex">
             <div className="ContactInformation self-stretch h-[34px] text-dark300 text-xl font-semibold font-Work_Sans leading-normal">
@@ -228,9 +228,9 @@ export default function Page() {
           </div>
         </div>
 
-        {/* Form Desktop */}
+        {/* Form Desktop Screen */}
         <div className="formDesktop hidden lg:block">
-          <div className=" w-[100%] h-[1276px] px-28 py-20 justify-start items-start gap-8 inline-flex">
+          <div className=" w-[100%] h-[1276px] px-28 py-20 lg:py-10 justify-start items-start gap-8 inline-flex">
             <div className="OrderCart w-[800px] px-4 py-8 bg-gray50 rounded-2xl flex-col justify-start items-end gap-8 inline-flex">
               <div className="Form self-stretch h-[220px] rounded-[10px] flex-col justify-start items-start gap-6 flex">
                 <div className="ContactInformation self-stretch h-[34px] text-dark400 text-xl font-semibold font-Work_Sans leading-normal">
@@ -332,7 +332,7 @@ export default function Page() {
                     </div>
                   </div>
                 </div>
-                <div className="Frame1618868215 self-stretch justify-start items-start gap-8 inline-flex">
+                <div className="State self-stretch justify-start items-start gap-8 inline-flex">
                   <div className="State grow shrink basis-0 h-[69px] justify-between items-start flex">
                     <div className="Name grow shrink basis-0 flex-col justify-start items-start gap-3 inline-flex">
                       <div className="State text-dark400 text-sm font-semibold font-Work_Sans leading-[16.80px]">

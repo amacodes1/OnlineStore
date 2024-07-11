@@ -6,15 +6,15 @@ export default function Page() {
   return (
     <div>
       <div className="CheckoutConfirmation w-full h-[695px] px-4 pb-20 bg-white flex-col justify-start items-center gap-10 inline-flex">
-        <div className=" h-[214px] py-4 rounded-2xl flex-col justify-start items-start gap-2 flex">
+        <div className=" h-[214px] py-4 md:py-20 rounded-2xl flex-col justify-start items-start gap-2 flex">
           <div className="Title self-stretch px-4 py-2 justify-end items-center gap-4 inline-flex">
-            <Image
+            {/* <Image
               className="IconsCloseLine w-6 h-6 relative text-dark300"
               src="/images/close.png"
               height={500}
               width={500}
               alt="close-icon"
-            />
+            /> */}
           </div>
           <div className="Steppers self-stretch h-[125px] px-4 pb-2 pt-10 rounded-lg flex-col justify-center items-center gap-4 flex">
             <div className="Checkout self-stretch h-[34px] text-center text-dark400 text-lg font-bold font-Work_Sans leading-tight">
