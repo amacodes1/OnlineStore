@@ -153,7 +153,7 @@ export default function Page() {
 
         {/* Desktop Screen */}
         <div className="hidden lg:block">
-          <div className="Cart w-full h-full px-28 py-20 justify-start items-start gap-8 inline-flex">
+          <div className="Cart w-full h-[1276px] px-28 py-20 justify-start items-start gap-8 inline-flex">
             <div className="PaymentMethod w-[800px] px-4 py-8 bg-gray50 rounded-2xl flex-col justify-start items-end gap-8 inline-flex">
               <div className=" self-stretch h-[422px] flex-col justify-start items-start gap-8 flex">
                 <div className="SelectPaymentMethod self-stretch text-dark400 text-xl font-semibold font-Work_Sans leading-normal">
