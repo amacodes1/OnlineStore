@@ -179,13 +179,13 @@ export default function FilterProducts() {
       : productData.filter((product) => product.category === selectedCategory);
 
   return (
-    <div className="Wrapper w-full px-4 py-20 flex flex-col justify-between items-center gap-6">
+    <div className="Wrapper w-full lg:h-[2549px] px-4 lg:px-28 py-20 flex flex-col justify-between items-center gap-6 lg:gap-[60px] lg:inline-flex">
       {/* Header Section */}
-      <div className="Header self-stretch w-[100%] md:px-[10%] h-[106px] flex-col flex md:flex-row justify-between items-center gap-4">
+      <div className="Header self-stretch w-[100%] md:px-[7%] h-[106px] flex-col flex lg:inline-flex md:flex-row justify-between items-center gap-4">
         <div className="Products text-dark500 text-2xl font-bold font-Work_Sans capitalize md:leading-[48px] leading-normal">
           50+ Products
         </div>
-        <div className="Filter flex flex-col md:flex-row justify-center items-center gap-2">
+        <div className="Filter flex flex-col md:flex-row justify-center lg:justify-end items-center gap-2">
           <div className="FilterProductsBy text-dark300 text-sm font-normal font-Work_Sans leading-[21px]">
             Filter Products By:
           </div>
@@ -207,9 +207,9 @@ export default function FilterProducts() {
         {filteredProducts.map((product) => (
           <div
             key={product.id}
-            className="Card flex-col justify-start items-start gap-0 inline-flex"
+            className="Card flex-col justify-start items-start gap-0 lg:gap-4 inline-flex"
           >
-            <div className="Img self-stretch w-[155px] lg:w-[200px] lg:h-[290px] h-[160px] rounded-2xl flex-col justify-start items-start gap-2.5 flex">
+            <div className="Img self-stretch w-[155px] lg:w-[260px] lg:h-[305px] h-[160px] rounded-2xl flex-col justify-start items-start gap-2.5 lg:gap-[16.12px] flex">
               <Image
                 src={product.image}
                 height={500}
@@ -220,8 +220,8 @@ export default function FilterProducts() {
                 <div className="IconCartAdd w-6 h-6 relative flex" />
               </div>
             </div>
-            <div className="Info flex flex-col gap-0 leading-tight pt-[10%] lg:pt-[1px]">
-              <div className="RatingRatingGroup flex gap-0.5">
+            <div className="Info lg:self-stretch flex flex-col gap-0 leading-tight pt-[10%] lg:pt-[1px]">
+              <div className="RatingRatingGroup flex gap-0.5 ">
                 <Image
                   className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
                   src="/images/Star-Icon.png"
@@ -275,8 +275,8 @@ export default function FilterProducts() {
       </div>
 
       {/* Navigation Section */}
-      <div className="NavigationControls pt-8 px-[6%] self-stretch rounded-md justify-between items-center inline-flex">
-        <div className=" w-14 h-14 md:ml-10 p-2 bg-gray600 rounded-lg flex-col justify-center items-center gap-2.5 inline-flex">
+      <div className="NavigationControls pt-8 px-[6%] lg:px-[1%] self-stretch rounded-md justify-between items-center inline-flex">
+        <div className=" w-14 h-14 md:ml-10 p-2 lg:p-2.5 bg-gray600 rounded-lg flex-col justify-center items-center gap-2.5 inline-flex">
           <div className="ArrowLeft  origin-top-left text-dark rotate-0 w-[13.55px] h-[16.50px] relative">
             <Image
               src="/images/arrow-left.png"
@@ -286,25 +286,25 @@ export default function FilterProducts() {
             />
           </div>
         </div>
-        <div className="Pagination justify-start items-center gap-6 flex">
-          <div className="PageIndicator w-[90px] md:w-[200px] h-5 pl-[5px] md:pl-20 pr-2 md:pr-10 justify-center items-center flex">
-            <div className="Text text-center text-dark400 text-xs md:text-sm font-semibold font-Work_Sans leading-tight">
+        <div className="Pagination justify-start lg:justify-center items-center gap-6 flex">
+          <div className="PageIndicator w-[90px] md:w-[200px] h-5 pl-[5px] md:pl-20 pr-2 md:pr-10 justify-center lg:gap-2.5 items-center flex">
+            <div className="Text text-center text-dark400 text-xs md:text-sm font-semibold font-Work_Sans leading-tight lg:leading-none">
               Page 1 of 5
             </div>
           </div>
           <div className="PaginationList justify-center items-center gap-1 flex">
             <div className="PageNumber w-6 h-6 p-[13px] bg-white rounded-md border border-green400 flex-col justify-center items-center gap-2 inline-flex">
-              <div className="Text text-center text-dark400 text-sm font-normal font-Work_Sans leading-tight">
+              <div className="Text text-center text-dark400 text-sm font-normal font-Work_Sans leading-tight lg:leading-[16.80px]">
                 1
               </div>
             </div>
             <div className="TruncatedPages w-6 h-6 p-2 bg-white rounded-md flex-col justify-center items-center gap-2 inline-flex">
-              <div className="Text text-center text-gray600 text-lg font-medium font-Work_Sans leading-tight">
+              <div className="Text text-center text-gray600 text-lg font-medium font-Work_Sans leading-tight lg:leading-[16.80px]">
                 ...
               </div>
             </div>
             <div className="PageNumber w-6 h-6 p-[13px] bg-white rounded-md flex-col justify-center items-center gap-2 inline-flex">
-              <div className="Text text-center text-gray600 text-lg font-medium font-Work_Sans leading-tight">
+              <div className="Text text-center text-gray600 text-lg font-medium font-Work_Sans leading-tight lg:leading-[16.80px]">
                 5
               </div>
             </div>
