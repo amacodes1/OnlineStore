@@ -363,7 +363,7 @@ export default function Page() {
               </div>
               <div className="Button self-stretch px-[26px] py-2.5 bg-green500 rounded-lg justify-center items-center gap-2 inline-flex">
                 <div className="PlaceOrder text-center text-emerald-50 text-xl font-semibold font-Work_Sans leading-normal">
-                  Place Order
+                  <Link href="/checkoutPaymentProcess">Place Order</Link>
                 </div>
               </div>
             </div>
