@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <div>
       <div className="CheckoutInformation w-full h-[1349px] px-4 pb-20 bg-white flex-col justify-start items-center gap-8 inline-flex">
-        <div className="CheckoutHeader h-[212px] py-4 md:py-20  rounded-2xl flex-col justify-start items-start gap-2 flex">
+        <div className="CheckoutHeader h-[212px] py-4 md:pt-28  rounded-2xl flex-col justify-start items-start gap-2 flex">
           <div className="Title md:hidden self-stretch px-4 py-2 justify-end items-center gap-4 inline-flex">
             <Image
               className="IconsCloseLine w-6 h-6 relative"

@@ -14,8 +14,8 @@ export default function Page() {
         onClose={() => setDirectTransferModal(false)}
       />
       <div className="PaymentProcess w-full h-[744px] px-4 pb-20 bg-white flex-col justify-start items-center gap-8 inline-flex">
-        <div className="PaymentProcessHeader h-[212px] py-4 rounded-2xl flex-col justify-start items-start gap-2 flex">
-          <div className="Title self-stretch px-4 py-4 justify-end items-center gap-4 inline-flex">
+        <div className="PaymentProcessHeader h-[212px] py-4 md:pt-28 rounded-2xl flex-col justify-start items-start gap-2 flex">
+          <div className="Title self-stretch md:hidden px-4 py-4 justify-end items-center gap-4 inline-flex">
             <Image
               className="IconsCloseLine w-6 h-6 relative"
               src="/images/close.png"
