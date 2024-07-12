@@ -5,7 +5,7 @@ import React from "react";
 export default function Page() {
   return (
     <div>
-      <div className="CheckoutConfirmation w-full h-[695px] px-4 pb-20 bg-white flex-col justify-start items-center gap-10 inline-flex">
+      <div className="CheckoutConfirmation w-full h-[695px] px-4 lg:px-[28%] pb-20 bg-white flex-col justify-start items-center gap-10 inline-flex">
         <div className=" h-[214px] py-4 md:py-20 rounded-2xl flex-col justify-start items-start gap-2 flex">
           <div className="Title self-stretch px-4 py-2 justify-end items-center gap-4 inline-flex">
             {/* <Image
@@ -97,7 +97,7 @@ export default function Page() {
             Your order would be shipped in 24hours.
           </div>
         </div>
-        <div className="Button self-stretch px-[26px] py-2.5 bg-green500 rounded-lg justify-center items-center gap-2 inline-flex">
+        <div className="Button self-stretch px-[26px]  lg:w-[608px] py-2.5 bg-green500 rounded-lg justify-center items-center gap-2 inline-flex">
           <div className="ShowMore grow shrink basis-0 text-center text-green50 text-lg font-semibold font-Work_Sans leading-snug">
             <Link href="/">Continue Shopping</Link>
           </div>
