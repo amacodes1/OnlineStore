@@ -179,7 +179,7 @@ export default function FilterProducts() {
       : productData.filter((product) => product.category === selectedCategory);
 
   return (
-    <div className="Wrapper w-full lg:h-[2549px] px-4 lg:px-28 py-20 flex flex-col justify-between items-center gap-6 lg:gap-[60px] lg:inline-flex">
+    <div className="Wrapper w-full lg:h-[2549px] px-4 lg:px-28 py-10 md:py-20 flex flex-col justify-between items-center gap-6 lg:gap-[60px] lg:inline-flex">
       {/* Header Section */}
       <div className="Header self-stretch w-[100%] md:px-[7%] h-[106px] flex-col flex lg:inline-flex md:flex-row justify-between items-center gap-4">
         <div className="Products text-dark500 text-2xl font-bold font-Work_Sans capitalize md:leading-[48px] leading-normal">
@@ -190,7 +190,7 @@ export default function FilterProducts() {
             Filter Products By:
           </div>
           <select
-            className=" px-[100%] flex-grow py-1 md:px-4 md:py-2 rounded-lg border border-dark300 text-dark300 text-sm font-semibold font-Work_Sans"
+            className=" px-[90%] flex-grow py-1 md:px-4 md:py-2 rounded-lg border border-dark300 text-dark300 text-sm font-semibold font-Work_Sans"
             value={selectedCategory}
             onChange={handleCategoryChange}
           >
@@ -203,13 +203,13 @@ export default function FilterProducts() {
       </div>
 
       {/* Products Section */}
-      <div className="Products grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-start items-start gap-1 md:gap-10 lg:gap-20">
+      <div className="Products grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-center items-center gap-0 md:gap-8 lg:gap-20">
         {filteredProducts.map((product) => (
           <div
             key={product.id}
             className="Card flex-col justify-start items-start gap-0 lg:gap-4 inline-flex"
           >
-            <div className="Img self-stretch w-[155px] lg:w-[260px] lg:h-[305px] h-[160px] rounded-2xl flex-col justify-start items-start gap-2.5 lg:gap-[16.12px] flex">
+            <div className="Img self-stretch w-[155px] md:w-[200px] lg:w-[120%] lg:h-[305px] h-[160px] md:h-[200px] rounded-2xl flex-col justify-start items-start gap-2.5 lg:gap-[16.12px] flex">
               <Image
                 src={product.image}
                 height={500}
@@ -220,7 +220,7 @@ export default function FilterProducts() {
                 <div className="IconCartAdd w-6 h-6 relative flex" />
               </div>
             </div>
-            <div className="Info lg:self-stretch flex flex-col gap-0 leading-tight pt-[10%] lg:pt-[1px]">
+            <div className="Info self-stretch flex flex-col justify-start items-start gap-0 leading-tight pb-[10%] lg:pb-[0%] pt-[10%] lg:pt-[1px]">
               <div className="RatingRatingGroup flex gap-0.5 ">
                 <Image
                   className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"

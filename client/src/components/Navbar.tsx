@@ -112,7 +112,7 @@ export default function Navbar() {
 
       {/* Cart dropdown for large screens */}
       {isCartOpen && (
-        <div className="hidden md:block absolute right-0 top-[100px] mt-2 z-20 w-full lg:w-[400px] lg:shadow-lg">
+        <div className="hidden lg:block absolute right-0 top-[100px] mt-2 z-20 w-full lg:w-[400px] lg:shadow-lg">
           <Cart />
         </div>
       )}

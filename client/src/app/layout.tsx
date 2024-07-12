@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} overflow-x-hidden h-[100%] w-[100%]`}
+        className={`${inter.className} overflow-x-hidden h-[100%] w-[100%] flex flex-col min-h-screen relative `}
       >
         <InfoBar />
         <Navbar />
