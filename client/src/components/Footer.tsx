@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="mt-auto">
+    <div className="">
       <div className="Footer w-full h-[298px] px-4 pt-20 pb-10 bg-dark500 flex-col justify-start items-center gap-10 inline-flex">
         <div className="Content md:self-stretch h-[178px] flex-col justify-start items-start gap-[31px] flex">
           <div className="Dividers w-[358px] md:w-[1216px] h-px justify-center items-center inline-flex">

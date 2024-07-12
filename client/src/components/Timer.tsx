@@ -4,8 +4,8 @@ import React from "react";
 export default function Timer() {
   return (
     <div>
-      <div className="Content w-full h-[371px] px-8 py-20 bg-dark500 flex-col justify-center items-start gap-10 inline-flex">
-        <div className="Title self-stretch h-[65px] flex-col justify-start items-start gap-2 flex">
+      <div className="Content w-full h-[371px] px-8 sm:px-[25%] md:px-[30%] lg:px-[8%] py-20 bg-dark500 flex-col justify-center items-start gap-10 inline-flex">
+        <div className="Title self-stretch h-[65px] lg:pt-[3%] flex-col justify-start items-start gap-2 flex">
           <div className="Title self-stretch">
             <span className="text-green200 text-[40px] font-extrabold font-Work_Sans leading-[38px]">
               Super{" "}
@@ -23,7 +23,7 @@ export default function Timer() {
             </span>
           </div>
         </div>
-        <div className="Timer self-stretch h-[106px] flex-col justify-center items-start gap-3 flex">
+        <div className="Timer self-stretch h-[106px] lg:pt-[8%] flex-col justify-center items-start gap-3 flex">
           <div className="OfferExpiresIn w-[360px] text-gray50 text-base font-normal font-Work_Sans leading-tight">
             Offer expires in:
           </div>
@@ -72,7 +72,7 @@ export default function Timer() {
         </div>
         <div className="hidden lg:block">
           <Image
-            className="grow shrink basis-0 h-60 rounded-2xl w-[60%] left-[30%] bottom-[6%] absolute"
+            className="grow shrink basis-0 h-60 rounded-2xl w-[55%] left-[35%] bottom-[6%] absolute"
             src="/images/timerImg.png"
             width={500}
             height={500}
