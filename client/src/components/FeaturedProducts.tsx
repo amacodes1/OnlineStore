@@ -21,31 +21,232 @@ export default function FeaturedProducts() {
         </div>
 
         {/* Products */}
-        <div className="Products self-stretch h-auto md:flex-row gap-4 md:gap-4 lg:gap-8 flex">
-          {/* First Image Section */}
-          <div className="ImageSection flex-grow flex-shrink w-1/3 h-[458px] gap-4">
-            <Link href="/cart">
-              <div className="Image self-stretch rounded-2xl justify-start items-start gap-2.5 inline-flex">
-                <Image
-                  className="Image grow shrink basis-0 h-[188px] sm:h-[300px] md:h-[350px]"
-                  src="/images/first-pic.png"
-                  height={500}
-                  width={500}
-                  alt="line"
-                />
 
-                <div className="NewBorder px-6 py-3 bg-white25 rounded-lg border border-white justify-center items-center gap-2.5 flex">
-                  <div className="NewText text-gray50 text-base font-medium font-['Roboto'] leading-normal tracking-tight">
-                    New
-                  </div>
-                </div>
-
-                <div className="Add w-[50px] h-[50px] p-[13px] bg-white25 rounded-[32px] justify-center items-center flex">
-                  <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
+        {/* Mobile View */}
+        <div className="hidden">
+          <div className="Frame1618868168 w-[390px] h-[1683px] px-4 pt-20 pb-10 bg-white flex-col justify-center items-center gap-[23px] inline-flex">
+            {/* <div className="Frame1618868167 self-stretch h-[102px] flex-col justify-start items-center gap-4 flex">
+            <div className="FeaturedProducts self-stretch text-center text-neutral-700 text-2xl font-medium font-['Work Sans'] leading-[44px]">
+              Featured Products
+            </div>
+            <div className="Frame1000001074 p-2.5 bg-zinc-100 rounded-lg justify-center items-center gap-1 inline-flex">
+              <div className="Frame1000001082 justify-center items-center gap-2.5 flex">
+                <div className="NewSales text-neutral-700 text-lg font-medium font-['Work Sans'] leading-snug">
+                  New Sales
                 </div>
               </div>
-            </Link>
-            <div className="ImageContent self-stretch h-[62px] flex-col justify-start items-start gap-3 flex">
+            </div>
+          </div> */}
+            <div className="Frame1000001075 self-stretch h-[1438px] flex-col justify-start items-start gap-8 flex">
+              <div className="Frame90 self-stretch h-[458px] flex-col justify-start items-start gap-4 flex">
+                <div className="Frame85 self-stretch rounded-2xl justify-start items-start gap-2.5 inline-flex">
+                  <img
+                    className="Rectangle5 grow shrink basis-0 h-[380px]"
+                    src="https://via.placeholder.com/358x380"
+                  />
+                  <div className="Frame76 px-6 py-3 bg-white/opacity-25 rounded-lg border border-white backdrop-blur-2xl justify-center items-center gap-2.5 flex">
+                    <div className="New text-neutral-50 text-base font-medium font-['Roboto'] leading-normal tracking-tight">
+                      New
+                    </div>
+                  </div>
+                  <div className="Add w-[50px] h-[50px] p-[13px] bg-white/opacity-25 rounded-[32px] backdrop-blur-sm justify-center items-center flex">
+                    <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
+                  </div>
+                </div>
+                <div className="Content self-stretch h-[62px] flex-col justify-start items-start gap-3 flex">
+                  <div className="Content self-stretch h-[62px] flex-col justify-start items-start gap-3 flex">
+                    <div className="TextPrice self-stretch h-[62px] flex-col justify-start items-start gap-1 flex">
+                      <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
+                        <div className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex" />
+                        <div className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex" />
+                        <div className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex" />
+                        <div className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex" />
+                        <div className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex" />
+                      </div>
+                      <div className="VisionaryEleganceEyewear self-stretch text-neutral-700 text-base font-semibold font-['Work Sans'] leading-tight">
+                        Visionary Elegance Eyewear
+                      </div>
+                      <div className="Price justify-start items-start gap-3 inline-flex">
+                        <div className="14999 text-neutral-700 text-base font-semibold font-['Work Sans'] leading-tight">
+                          $149.99
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="Frame1000001076 self-stretch h-[458px] flex-col justify-start items-start gap-4 flex">
+                <div className="Frame85 self-stretch rounded-2xl justify-start items-start gap-2.5 inline-flex">
+                  <div className="Rectangle5 grow shrink basis-0 h-[380px] bg-black/opacity-20" />
+                  <div className="Frame76 px-6 py-3 bg-white/opacity-25 rounded-lg border border-white backdrop-blur-2xl justify-center items-center gap-2.5 flex">
+                    <div className="New text-white text-base font-medium font-['Roboto'] leading-normal tracking-tight">
+                      New
+                    </div>
+                  </div>
+                  <div className="Add w-[50px] h-[50px] p-[13px] bg-white/opacity-25 rounded-[32px] backdrop-blur-sm justify-center items-center flex">
+                    <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
+                  </div>
+                </div>
+                <div className="Content self-stretch h-[62px] flex-col justify-start items-start gap-3 flex">
+                  <div className="TextPrice self-stretch h-[62px] flex-col justify-start items-start gap-1 flex">
+                    <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
+                      <div className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex" />
+                      <div className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex" />
+                      <div className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex" />
+                      <div className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex" />
+                      <div className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex" />
+                    </div>
+                    <div className="WomenPartySunglasses self-stretch text-neutral-700 text-base font-semibold font-['Work Sans'] leading-tight">
+                      Women Party sunglasses
+                    </div>
+                    <div className="Price justify-start items-start gap-3 inline-flex">
+                      <div className="12099 text-neutral-700 text-base font-semibold font-['Work Sans'] leading-tight">
+                        $120.99
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="Frame1000001077 self-stretch h-[458px] flex-col justify-start items-start gap-4 flex">
+                <div className="Frame85 self-stretch rounded-2xl justify-start items-start gap-2.5 inline-flex">
+                  <img
+                    className="Rectangle5 grow shrink basis-0 h-[380px]"
+                    src="https://via.placeholder.com/358x380"
+                  />
+                  <div className="Frame76 px-6 py-3 bg-white/opacity-25 rounded-lg border border-white backdrop-blur-2xl justify-center items-center gap-2.5 flex">
+                    <div className="New text-white text-base font-medium font-['Roboto'] leading-normal tracking-tight">
+                      New
+                    </div>
+                  </div>
+                  <div className="Add w-[50px] h-[50px] p-[13px] bg-white/opacity-25 rounded-[32px] backdrop-blur-sm justify-center items-center flex">
+                    <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
+                  </div>
+                </div>
+                <div className="Content self-stretch h-[62px] flex-col justify-start items-start gap-3 flex">
+                  <div className="TextPrice self-stretch h-[62px] flex-col justify-start items-start gap-1 flex">
+                    <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
+                      <div className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex" />
+                      <div className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex" />
+                      <div className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex" />
+                      <div className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex" />
+                      <div className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex" />
+                    </div>
+                    <div className="DriverProtectionGlasses self-stretch text-neutral-700 text-base font-semibold font-['Work Sans'] leading-tight">
+                      Driver Protection Glasses
+                    </div>
+                    <div className="Price justify-start items-start gap-3 inline-flex">
+                      <div className="130 text-neutral-700 text-base font-semibold font-['Work Sans'] leading-tight">
+                        $130
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop View */}
+        <div className="">
+          <div className="Products self-stretch h-auto md:flex-row gap-8 md:gap-4 lg:gap-8 flex">
+            {/* First Image Section */}
+            <div className="ImageSection flex-grow flex-shrink w-1/3 h-[458px] gap-4">
+              <Link href="/cart">
+                <div className="Image self-stretch rounded-2xl justify-start items-start gap-2.5 inline-flex">
+                  <Image
+                    className="Image grow shrink basis-0 h-[188px] sm:h-[300px] md:h-[350px]"
+                    src="/images/first-pic.png"
+                    height={500}
+                    width={500}
+                    alt="line"
+                  />
+
+                  <div className="NewBorder px-6 py-3 bg-white25 rounded-lg border border-white justify-center items-center gap-2.5 flex">
+                    <div className="NewText text-gray50 text-base font-medium font-['Roboto'] leading-normal tracking-tight">
+                      New
+                    </div>
+                  </div>
+
+                  <div className="Add w-[50px] h-[50px] p-[13px] bg-white25 rounded-[32px] justify-center items-center flex">
+                    <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
+                  </div>
+                </div>
+              </Link>
+              <div className="ImageContent self-stretch h-[62px] flex-col justify-start items-start gap-3 flex">
+                <div className="Content self-stretch h-[62px] flex-col justify-start items-start gap-3 flex">
+                  <div className="TextPrice self-stretch h-[62px] flex-col justify-start items-start gap-1 flex">
+                    <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
+                      <Image
+                        className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
+                        src="/images/Star-Icon.png"
+                        height={500}
+                        width={500}
+                        alt="star"
+                      />
+                      <Image
+                        className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
+                        src="/images/Star-Icon.png"
+                        height={500}
+                        width={500}
+                        alt="star"
+                      />
+                      <Image
+                        className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
+                        src="/images/Star-Icon.png"
+                        height={500}
+                        width={500}
+                        alt="star"
+                      />
+                      <Image
+                        className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
+                        src="/images/Star-Icon.png"
+                        height={500}
+                        width={500}
+                        alt="star"
+                      />
+                      <Image
+                        className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
+                        src="/images/Star-Icon.png"
+                        height={500}
+                        width={500}
+                        alt="star"
+                      />
+                    </div>
+                    <div className="Description self-stretch text-dark400 text-base font-semibold font-Work_Sans leading-tight">
+                      Visionary Elegance Eyewear
+                    </div>
+                    <div className="Price justify-start items-start gap-3 inline-flex">
+                      <div className="PriceNumber text-dark400 text-base font-semibold font-Work_Sans leading-tight">
+                        $149.99
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Second Image Section */}
+            <div className="ImageSection flex-grow flex-shrink w-1/3 h-[458px] flex-col justify-start items-start gap-4">
+              <Link href="/cart">
+                <div className="Image self-stretch rounded-2xl justify-start items-start gap-2.5 inline-flex">
+                  <Image
+                    className="Image grow shrink basis-0 h-[188px] sm:h-[300px] md:h-[350px]"
+                    src="/images/second-pic.png"
+                    height={500}
+                    width={500}
+                    alt="glasses"
+                  />
+
+                  <div className="NewBorder px-6 py-3 bg-white25 rounded-lg border border-white  justify-center items-center gap-2.5 flex">
+                    <div className="NewText text-white text-base font-medium font-['Roboto'] leading-normal tracking-tight">
+                      New
+                    </div>
+                  </div>
+                  <div className="Add w-[50px] h-[50px] p-[13px] bg-white25 rounded-[32px] justify-center items-center flex">
+                    <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
+                  </div>
+                </div>
+              </Link>
               <div className="Content self-stretch h-[62px] flex-col justify-start items-start gap-3 flex">
                 <div className="TextPrice self-stretch h-[62px] flex-col justify-start items-start gap-1 flex">
                   <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
@@ -86,7 +287,7 @@ export default function FeaturedProducts() {
                     />
                   </div>
                   <div className="Description self-stretch text-dark400 text-base font-semibold font-Work_Sans leading-tight">
-                    Visionary Elegance Eyewear
+                    Party sunglasses
                   </div>
                   <div className="Price justify-start items-start gap-3 inline-flex">
                     <div className="PriceNumber text-dark400 text-base font-semibold font-Work_Sans leading-tight">
@@ -96,148 +297,75 @@ export default function FeaturedProducts() {
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Second Image Section */}
-          <div className="ImageSection flex-grow flex-shrink w-1/3 h-[458px] flex-col justify-start items-start gap-4">
-            <Link href="/cart">
-              <div className="Image self-stretch rounded-2xl justify-start items-start gap-2.5 inline-flex">
-                <Image
-                  className="Image grow shrink basis-0 h-[188px] sm:h-[300px] md:h-[350px]"
-                  src="/images/second-pic.png"
-                  height={500}
-                  width={500}
-                  alt="glasses"
-                />
+            {/* Third Image Section */}
+            <div className="ImageSection flex-grow flex-shrink w-1/3 h-[450px] rounded-2xl flex-col justify-start items-start gap-4">
+              <Link href="/cart">
+                <div className="Image self-stretch rounded-2xl justify-start items-start gap-2.5 inline-flex">
+                  <Image
+                    className="Image grow shrink basis-0 h-[188px] sm:h-[300px] md:h-[350px]"
+                    src="/images/third-pic.png"
+                    height={500}
+                    width={500}
+                    alt="glasses"
+                  />
 
-                <div className="NewBorder px-6 py-3 bg-white25 rounded-lg border border-white  justify-center items-center gap-2.5 flex">
-                  <div className="NewText text-white text-base font-medium font-['Roboto'] leading-normal tracking-tight">
-                    New
+                  <div className=" px-6 py-3 bg-white25 rounded-lg border border-white justify-center items-center gap-2.5 flex">
+                    <div className="New text-white text-base font-medium font-['Roboto'] leading-normal tracking-tight">
+                      New
+                    </div>
+                  </div>
+                  <div className="Add w-[50px] h-[50px] p-[13px] bg-white25 rounded-[32px] backdrop-blur-sm justify-center items-center flex">
+                    <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
                   </div>
                 </div>
-                <div className="Add w-[50px] h-[50px] p-[13px] bg-white25 rounded-[32px] justify-center items-center flex">
-                  <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
-                </div>
-              </div>
-            </Link>
-            <div className="Content self-stretch h-[62px] flex-col justify-start items-start gap-3 flex">
-              <div className="TextPrice self-stretch h-[62px] flex-col justify-start items-start gap-1 flex">
-                <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
-                  <Image
-                    className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="/images/Star-Icon.png"
-                    height={500}
-                    width={500}
-                    alt="star"
-                  />
-                  <Image
-                    className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="/images/Star-Icon.png"
-                    height={500}
-                    width={500}
-                    alt="star"
-                  />
-                  <Image
-                    className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="/images/Star-Icon.png"
-                    height={500}
-                    width={500}
-                    alt="star"
-                  />
-                  <Image
-                    className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="/images/Star-Icon.png"
-                    height={500}
-                    width={500}
-                    alt="star"
-                  />
-                  <Image
-                    className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="/images/Star-Icon.png"
-                    height={500}
-                    width={500}
-                    alt="star"
-                  />
-                </div>
-                <div className="Description self-stretch text-dark400 text-base font-semibold font-Work_Sans leading-tight">
-                  Party sunglasses
-                </div>
-                <div className="Price justify-start items-start gap-3 inline-flex">
-                  <div className="PriceNumber text-dark400 text-base font-semibold font-Work_Sans leading-tight">
-                    $149.99
+              </Link>
+              <div className="Content self-stretch h-[62px] flex-col justify-start items-start gap-3 flex">
+                <div className="TextPrice self-stretch h-[62px] flex-col justify-start items-start gap-1 flex">
+                  <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
+                    <Image
+                      className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
+                      src="/images/Star-Icon.png"
+                      height={500}
+                      width={500}
+                      alt="star"
+                    />
+                    <Image
+                      className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
+                      src="/images/Star-Icon.png"
+                      height={500}
+                      width={500}
+                      alt="star"
+                    />
+                    <Image
+                      className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
+                      src="/images/Star-Icon.png"
+                      height={500}
+                      width={500}
+                      alt="star"
+                    />
+                    <Image
+                      className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
+                      src="/images/Star-Icon.png"
+                      height={500}
+                      width={500}
+                      alt="star"
+                    />
+                    <Image
+                      className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
+                      src="/images/Star-Icon.png"
+                      height={500}
+                      width={500}
+                      alt="star"
+                    />
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Third Image Section */}
-          <div className="ImageSection flex-grow flex-shrink w-1/3 h-[450px] rounded-2xl flex-col justify-start items-start gap-4">
-            <Link href="/cart">
-              <div className="Image self-stretch rounded-2xl justify-start items-start gap-2.5 inline-flex">
-                <Image
-                  className="Image grow shrink basis-0 h-[188px] sm:h-[300px] md:h-[350px]"
-                  src="/images/third-pic.png"
-                  height={500}
-                  width={500}
-                  alt="glasses"
-                />
-
-                <div className=" px-6 py-3 bg-white25 rounded-lg border border-white justify-center items-center gap-2.5 flex">
-                  <div className="New text-white text-base font-medium font-['Roboto'] leading-normal tracking-tight">
-                    New
+                  <div className="Description self-stretch text-dark400 text-base font-semibold font-Work_Sans leading-tight">
+                    Driver Protection Glasses
                   </div>
-                </div>
-                <div className="Add w-[50px] h-[50px] p-[13px] bg-white25 rounded-[32px] backdrop-blur-sm justify-center items-center flex">
-                  <div className="IconCartAdd w-6 h-6 relative flex-col justify-start items-start flex" />
-                </div>
-              </div>
-            </Link>
-            <div className="Content self-stretch h-[62px] flex-col justify-start items-start gap-3 flex">
-              <div className="TextPrice self-stretch h-[62px] flex-col justify-start items-start gap-1 flex">
-                <div className="RatingRatingGroup w-[88px] h-4 justify-center items-start gap-0.5 inline-flex">
-                  <Image
-                    className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="/images/Star-Icon.png"
-                    height={500}
-                    width={500}
-                    alt="star"
-                  />
-                  <Image
-                    className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="/images/Star-Icon.png"
-                    height={500}
-                    width={500}
-                    alt="star"
-                  />
-                  <Image
-                    className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="/images/Star-Icon.png"
-                    height={500}
-                    width={500}
-                    alt="star"
-                  />
-                  <Image
-                    className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="/images/Star-Icon.png"
-                    height={500}
-                    width={500}
-                    alt="star"
-                  />
-                  <Image
-                    className="StarIcon w-4 h-4 relative flex-col justify-start items-start flex"
-                    src="/images/Star-Icon.png"
-                    height={500}
-                    width={500}
-                    alt="star"
-                  />
-                </div>
-                <div className="Description self-stretch text-dark400 text-base font-semibold font-Work_Sans leading-tight">
-                  Driver Protection Glasses
-                </div>
-                <div className="Price justify-start items-start gap-3 inline-flex">
-                  <div className="PriceNumber text-dark400 text-base font-semibold font-Work_Sans leading-tight">
-                    $149.99
+                  <div className="Price justify-start items-start gap-3 inline-flex">
+                    <div className="PriceNumber text-dark400 text-base font-semibold font-Work_Sans leading-tight">
+                      $149.99
+                    </div>
                   </div>
                 </div>
               </div>
