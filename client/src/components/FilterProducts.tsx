@@ -5,8 +5,6 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 // import { useCart } from "./CartProvider";
 import { useCartStore } from "@/store";
-// import { useDispatch } from "react-redux";
-// import { addToCart } from "./redux/cartSlice";
 
 export default function FilterProducts() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -265,7 +263,10 @@ export default function FilterProducts() {
           </div>
           <div className="AllCards h-[3000px] self-stretch grid grid-cols-2 justify-center items-center gap-3">
             {products.map((product: any) => (
-              <div className="FirstCard w-[173px] flex-col justify-start items-start gap-3 inline-flex">
+              <div
+                key={product?._id}
+                className="FirstCard w-[173px] flex-col justify-start items-start gap-3 inline-flex"
+              >
                 <div className="Image self-stretch h-[188px] rounded-2xl flex-col justify-start items-start px-2 gap-2.5 flex">
                   <Image
                     className="grow shrink basis-0 rounded-2xl  bg-dark300"

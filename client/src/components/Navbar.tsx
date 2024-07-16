@@ -4,30 +4,75 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import Cart from "./Cart";
+import { useCartStore } from "@/store";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const cart = useCartStore((state) => state.cart);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
   };
 
   const toggleCart = () => {
     setIsCartOpen(!isCartOpen);
   };
 
+  const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+
   return (
     <div className="relative">
       <div className="w-6 h-6 absolute left-[291px] top-[58px]" />
       <div className="bg-white w-full h-[60px] md:h-[80px] px-4 md:px-28 py-2 md:py-6 absolute left-0 top-[32px] flex justify-between items-center">
         <div className="flex items-center">
-          <button
-            className="md:hidden px-1 py-2 rounded-lg flex items-center gap-2"
-            onClick={toggleMenu}
-          >
-            <Image src="/images/menu.png" height={24} width={24} alt="menu" />
-          </button>
+          <div className="md:hidden">
+            {menuOpen ? (
+              <button
+                className="px-1 py-2 rounded-lg flex items-center gap-2 text-dark focus:outline-none"
+                onClick={closeMenu}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-10"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            ) : (
+              <button
+                className="text-dark focus:outline-none"
+                onClick={toggleMenu}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-12"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              </button>
+            )}
+          </div>
           <div className="px-1 py-2 flex items-center">
             <h1 className="text-dark500 text-lg md:text-[34px] font-bold md:font-medium font-Work_Sans leading-snug">
               <Link href="/">GLAZ</Link>
