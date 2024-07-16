@@ -23,6 +23,10 @@ interface CartState {
   clearCart: () => void;
 }
 
+interface CartItem extends Product {
+  quantity: number;
+}
+
 export const useCartStore = create<CartState>((set) => ({
   productList: [],
   cart: [],

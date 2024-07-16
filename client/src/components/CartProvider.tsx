@@ -51,38 +51,38 @@ const CartContext = createContext<CartContextType>({
 //   clearCart: () => {},
 //   getTotalPrice: () => 0,
 
-const CartReducer = (state: Product[], action: any) => {
-  //   switch (action.type) {
-  //     case "ADD_TO_CART":
-  //       const existingProductIndex = state.findIndex(
-  //         (product) => product.id === action.payload.id
-  //       );
-  //       if (existingProductIndex !== -1) {
-  //         const updatedCart = [...state];
-  //         updatedCart[existingProductIndex].quantity += 1;
-  //         return updatedCart;
-  //       }
-  //       return [...state, { ...action.payload, quantity: 1 }];
-  //     case "REMOVE_FROM_CART":
-  //       return state.filter((product) => product.id !== action.payload.id);
-  //     case "INCREMENT":
-  //       return state.map((product) =>
-  //         product.id === action.payload.id
-  //           ? { ...product, quantity: product.quantity + 1 }
-  //           : product
-  //       );
-  //     case "DECREMENT":
-  //       return state.map((product) =>
-  //         product.id === action.payload.id && product.quantity > 1
-  //           ? { ...product, quantity: product.quantity - 1 }
-  //           : product
-  //       );
-  //     case "CLEAR_CART":
-  //       return [];
-  //     default:
-  //       return state;
-  //   }
-};
+// const CartReducer = (state: Product[], action: any) => {
+//   switch (action.type) {
+//     case "ADD_TO_CART":
+//       const existingProductIndex = state.findIndex(
+//         (product) => product.id === action.payload.id
+//       );
+//       if (existingProductIndex !== -1) {
+//         const updatedCart = [...state];
+//         updatedCart[existingProductIndex].quantity += 1;
+//         return updatedCart;
+//       }
+//       return [...state, { ...action.payload, quantity: 1 }];
+//     case "REMOVE_FROM_CART":
+//       return state.filter((product) => product.id !== action.payload.id);
+//     case "INCREMENT":
+//       return state.map((product) =>
+//         product.id === action.payload.id
+//           ? { ...product, quantity: product.quantity + 1 }
+//           : product
+//       );
+//     case "DECREMENT":
+//       return state.map((product) =>
+//         product.id === action.payload.id && product.quantity > 1
+//           ? { ...product, quantity: product.quantity - 1 }
+//           : product
+//       );
+//     case "CLEAR_CART":
+//       return [];
+//     default:
+//       return state;
+//   }
+// };
 
 export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [isCartOpen, setIsCartOpen] = useState(false);
