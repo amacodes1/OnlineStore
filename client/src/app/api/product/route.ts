@@ -3,7 +3,7 @@ const APP_ID = "VLUQZCFWMQ8NTZX";
 const API_KEY = "72e558bb01e3456991c0bb24303e71a520240713010709100144";
 
 // Fetch all products
-export const fetchAllProducts = async () => {
+export const FetchAllProducts = async () => {
   try {
     const response = await fetch(
       `https://timbu-get-all-products.reavdev.workers.dev/?organization_id=${ORGANIZATION_ID}&reverse_sort=false&page=1&size=20&Appid=${APP_ID}&Apikey=${API_KEY}`
@@ -17,7 +17,7 @@ export const fetchAllProducts = async () => {
 };
 
 // Fetch a single product by ID
-export const fetchProductById = async (id: any) => {
+export const FetchProductById = async (id: any) => {
   try {
     const response = await fetch(
       `https://timbu-get-single-product.reavdev.workers.dev/${id}?organization_id=${ORGANIZATION_ID}&Appid=${APP_ID}&Apikey=${API_KEY}`

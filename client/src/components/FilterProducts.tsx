@@ -1,6 +1,6 @@
 "use client";
 
-import { fetchAllProducts } from "@/app/api/product/route";
+import { FetchAllProducts } from "@/app/api/product/route";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 // import { useCart } from "./CartProvider";
@@ -17,7 +17,7 @@ export default function FilterProducts() {
   useEffect(() => {
     const loadProducts = async () => {
       try {
-        const fetchedProducts = await fetchAllProducts();
+        const fetchedProducts = await FetchAllProducts();
         setProducts(fetchedProducts.items || []);
       } catch (error) {
         console.error("Error fetching products:", error);
