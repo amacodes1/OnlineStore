@@ -1,31 +1,35 @@
-const ORGANIZATION_ID = "8a7d7ce37f124a7885872c77c689ff5c";
-const APP_ID = "VLUQZCFWMQ8NTZX";
-const API_KEY = "72e558bb01e3456991c0bb24303e71a520240713010709100144";
+import { FetchAllProducts, FetchProductById } from "@/lib/products";
+import { NextApiRequest, NextApiResponse } from "next";
 
-// Fetch all products
-export const FetchAllProducts = async () => {
-  try {
-    const response = await fetch(
-      `https://timbu-get-all-products.reavdev.workers.dev/?organization_id=${ORGANIZATION_ID}&reverse_sort=false&page=1&size=20&Appid=${APP_ID}&Apikey=${API_KEY}`
-    );
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error("Failed to fetch products:", error);
-    return null;
-  }
-};
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
+  const { method } = req;
 
-// Fetch a single product by ID
-export const FetchProductById = async (id: any) => {
-  try {
-    const response = await fetch(
-      `https://timbu-get-single-product.reavdev.workers.dev/${id}?organization_id=${ORGANIZATION_ID}&Appid=${APP_ID}&Apikey=${API_KEY}`
-    );
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error("Failed to fetch product:", error);
-    return null;
+  switch (method) {
+    case "GET":
+      // Check if product ID is provided in the query parameters
+      const { id } = req.query;
+
+      if (id) {
+        // Fetch a single product by ID
+        const product = await FetchProductById(id as string);
+        if (product) {
+          res.status(200).json(product);
+        } else {
+          res.status(404).json({ message: "Product not found" });
+        }
+      } else {
+        // Fetch all products
+        const products = await FetchAllProducts();
+        res.status(200).json(products);
+      }
+      break;
+
+    default:
+      res.setHeader("Allow", ["GET"]);
+      res.status(405).end(`Method ${method} Not Allowed`);
+      break;
   }
-};
+}

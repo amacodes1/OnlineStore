@@ -1,10 +1,10 @@
 "use client";
 
-import { FetchAllProducts } from "@/app/api/product/route";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 // import { useCart } from "./CartProvider";
 import { useCartStore } from "@/store";
+import { FetchAllProducts } from "@/lib/products";
 
 export default function FilterProducts() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -33,6 +33,8 @@ export default function FilterProducts() {
 
   const updateCart = (product: any) => {
     addToCart(product);
+    setNotification(`${product.name} has been added to your cart!`);
+    setTimeout(() => setNotification(null), 3000);
   };
 
   // const handleAddToCart = (productId: string) => {
