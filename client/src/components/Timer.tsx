@@ -1,7 +1,38 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Timer() {
+  const [timeLeft, setTimeLeft] = useState<number>();
+
+  useEffect(() => {
+    const targetDate = new Date("2024-12-31T23:59:59");
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const difference = targetDate.getTime() - now;
+
+      if (difference <= 0) {
+        clearInterval(interval);
+        setTimeLeft(0);
+      } else {
+        setTimeLeft(difference);
+      }
+    }, 1000);
+
+    return () => {
+      clearInterval(interval);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  // const hours = Math.floor(
+  //   (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  // );
+  // const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  // const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
   return (
     <div>
       <div className="Content w-full h-[371px] px-8 sm:px-[25%] md:px-[30%] lg:px-[8%] py-20 bg-dark500 flex-col justify-center items-start gap-10 inline-flex">

@@ -47,6 +47,8 @@ const config: Config = {
       green700: "#45B26B",
       green800: "#1F704B",
       gold: "#FFB800",
+      red500: "#ef4444",
+      red700: "#b91c1c",
     },
 
     fontFamily: {

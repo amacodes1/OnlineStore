@@ -4,6 +4,8 @@ import "./globals.css";
 import InfoBar from "@/components/InfoBar";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { CartProvider } from "@/components/CartProvider";
+import { Provider } from "react-redux";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,10 +24,12 @@ export default function RootLayout({
       <body
         className={`${inter.className} overflow-x-hidden h-[100%] w-[100%] flex flex-col min-h-screen relative `}
       >
-        <InfoBar />
-        <Navbar />
-        {children}
-        <Footer />
+        <CartProvider>
+          <InfoBar />
+          <Navbar />
+          {children}
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );
