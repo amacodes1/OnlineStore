@@ -34,51 +34,6 @@ export default function FilterProducts() {
     setTimeout(() => setNotification(null), 3000);
   };
 
-  // const handleAddToCart = (productId: string) => {
-  //   if (!cart.includes(productId)) {
-  //     setCart((prevCart) => [...prevCart, productId]);
-  //     setNotification("Item added to cart!");
-  //     setTimeout(() => {
-  //       setNotification(null);
-  //     }, 3000);
-  //   } else {
-  //     setNotification("Item is already in the cart!");
-  //     setTimeout(() => {
-  //       setNotification(null);
-  //     }, 3000);
-  //   }
-  // };
-
-  // const updateCart = ({
-  //   id,
-  //   name,
-  //   description,
-  //   photos,
-  //   current_price,
-  //   rating,
-  //   categories,
-  // }: {
-  //   id: any;
-  //   name: any;
-  //   description: any;
-  //   photos: any;
-  //   current_price: any;
-  //   rating: any;
-  //   categories: any;
-  // }) => {
-  //   dispatch(
-  //     addToCart({
-  //       id,
-  //       name,
-  //       description,
-  //       photos,
-  //       current_price,
-  //       rating,
-  //       categories,
-  //     })
-  //   );
-  // };
-
   return (
     <div>
       {/* Desktop View */}
@@ -198,7 +153,13 @@ export default function FilterProducts() {
 
           <div className="NavigationControls self-stretch rounded-md justify-between items-center inline-flex">
             <div className="Arrow w-14 h-14 p-2.5 bg-gray100 rounded-lg flex-col justify-center items-center gap-2.5 inline-flex">
-              <div className="ArrowLeft origin-top-left rotate-90 w-[13.55px] h-[16.50px] relative"></div>
+              <Image
+                className="ArrowLeft origin-center rotate-360 w-[13.55px] h-[16.20px] relative"
+                src="/images/arrow-left.png"
+                height={40}
+                width={40}
+                alt="arrow"
+              />
             </div>
             <div className="Pagination justify-center items-center gap-6 flex">
               <div className="PageIndicator justify-center items-center gap-2.5 flex">
@@ -225,7 +186,13 @@ export default function FilterProducts() {
               </div>
             </div>
             <div className="Arrow w-14 h-14 p-2.5 bg-green400 rounded-lg flex-col justify-center items-center gap-2.5 inline-flex">
-              <div className="ArrowRight origin-top-left -rotate-90 w-[13.55px] h-[16.50px] relative"></div>
+              <Image
+                className="ArrowRight origin-center -rotate-180 w-[13.55px] h-[16.50px] relative"
+                src="/images/arrow-left.png"
+                height={40}
+                width={40}
+                alt="arrow"
+              />
             </div>
           </div>
         </div>

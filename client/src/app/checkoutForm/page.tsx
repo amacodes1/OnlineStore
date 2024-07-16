@@ -1,5 +1,6 @@
 "use client";
 
+import Cart from "@/components/Cart";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -372,9 +373,11 @@ export default function Page() {
 
             {/* Cart Component */}
             <div className="hidden lg:block">
-              <div className="OrderCart w-[385px] px-4 py-8 bg-gray50 rounded-2xl flex-col justify-start items-center gap-8 inline-flex">
-                <div className="Summary self-stretch h-[590px] flex-col justify-start items-start flex">
-                  <div className="Title self-stretch justify-start items-center gap-4 inline-flex">
+              <div className="OrderCart w-[385px] bg-gray50 rounded-2xl flex-col justify-start items-center gap-8 inline-flex">
+                <Cart />
+                {/* <div className="Summary self-stretch h-[590px] flex-col justify-start items-start flex"> */}
+
+                {/* <div className="Title self-stretch justify-start items-center gap-4 inline-flex">
                     <div className="Cart grow shrink basis-0 text-dark400 text-xl font-semibold font-Work_Sans leading-normal">
                       Cart
                     </div>
@@ -733,7 +736,7 @@ export default function Page() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

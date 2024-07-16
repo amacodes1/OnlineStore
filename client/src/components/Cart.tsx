@@ -30,7 +30,7 @@ export default function Cart() {
 
   return (
     <div>
-      <div className="Cart w-full h-[100%] px-4 pt-28 pb-20 bg-white flex-col justify-start items-center gap-4 inline-flex">
+      <div className="Cart w-full h-[100%] rounded-2xl px-4 pt-28 pb-20 bg-gray50 flex-col justify-start items-center gap-4 inline-flex">
         <div className="Summary self-stretch h-[559px] flex-col justify-start items-start flex">
           <div className="Title self-stretch justify-start items-center gap-4 inline-flex">
             <div className="Cart grow shrink basis-0 text-dark400 text-2xl font-medium font-Work_Sans leading-[34px]">
