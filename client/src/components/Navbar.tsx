@@ -38,7 +38,7 @@ export default function Navbar() {
           <div className="md:hidden">
             {menuOpen ? (
               <button
-                className="px-1 py-2 rounded-lg flex items-center gap-2 text-dark focus:outline-none"
+                className="px-1 py-2 z-40 rounded-lg flex items-center gap-2 text-dark focus:outline-none"
                 onClick={closeMenu}
               >
                 <svg
@@ -159,6 +159,59 @@ export default function Navbar() {
           </button>
         </div>
       </div>
+
+      {/* Hamburger Menu Links */}
+      {menuOpen && (
+        <div className="absolute left-0 top-[85px] w-full bg-white shadow-md z-20">
+          <ul className="flex flex-col p-4">
+            <li className="py-2">
+              <Link
+                href="/"
+                onClick={closeMenu}
+                className="text-dark hover:text-green400"
+              >
+                Home
+              </Link>
+            </li>
+            <li className="py-2">
+              <Link
+                href="/products"
+                onClick={closeMenu}
+                className="text-dark hover:text-green400"
+              >
+                Products
+              </Link>
+            </li>
+            <li className="py-2">
+              <Link
+                href="/about"
+                onClick={closeMenu}
+                className="text-dark hover:text-green400"
+              >
+                About
+              </Link>
+            </li>
+            <li className="py-2">
+              <Link
+                href="/cart"
+                onClick={closeMenu}
+                className="text-dark hover:text-green400"
+              >
+                Cart ({getItemsCount()})
+              </Link>
+            </li>
+            <li className="py-2">
+              <Link
+                href="/contact"
+                onClick={closeMenu}
+                className="text-dark hover:text-green400"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
 
       {/* Cart dropdown for large screens */}
       {isCartOpen && (
