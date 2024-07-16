@@ -2,15 +2,12 @@
 
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-// import { useCart } from "./CartProvider";
 import { useCartStore } from "@/store";
 import { FetchAllProducts } from "@/lib/products";
 
 export default function FilterProducts() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [products, setProducts] = useState([]);
-  // const { isCartOpen, closeCart } = useCart();
-  const [cart, setCart] = useState<string[]>([]);
   const [notification, setNotification] = useState<string | null>(null);
   const addToCart = useCartStore((state) => state.addToCart);
 
@@ -32,7 +29,7 @@ export default function FilterProducts() {
   };
 
   const updateCart = (product: any) => {
-    addToCart(product);
+    addToCart(product.id);
     setNotification(`${product.name} has been added to your cart!`);
     setTimeout(() => setNotification(null), 3000);
   };
@@ -115,7 +112,7 @@ export default function FilterProducts() {
           <div className="h-[2200px] self-stretch grid grid-cols-4 justify-start items-center gap-8">
             {products.map((product: any) => (
               <div
-                key={product?._id}
+                key={product?.id}
                 className="FirstCard flex-col justify-start items-center gap-8"
               >
                 <div className="Image w-[280px] h-[305px] bg-dark50 rounded-[25.79px] flex-col justify-start items-start gap-[16.12px] flex">
@@ -266,7 +263,7 @@ export default function FilterProducts() {
           <div className="AllCards h-[3000px] self-stretch grid grid-cols-2 justify-center items-center gap-3">
             {products.map((product: any) => (
               <div
-                key={product?._id}
+                key={product?.id}
                 className="FirstCard w-[173px] flex-col justify-start items-start gap-3 inline-flex"
               >
                 <div className="Image self-stretch h-[188px] rounded-2xl flex-col justify-start items-start px-2 gap-2.5 flex">

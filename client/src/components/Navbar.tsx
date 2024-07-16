@@ -23,7 +23,12 @@ export default function Navbar() {
     setIsCartOpen(!isCartOpen);
   };
 
-  const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+  const getItemsCount = () => {
+    return cart.reduce(
+      (accumulator: any, item: any) => accumulator + item.quantity,
+      0
+    );
+  };
 
   return (
     <div className="relative">
@@ -125,8 +130,8 @@ export default function Navbar() {
                     width={20}
                     alt="cart"
                   />
-                  <span className="absolute top-[-10px] right-[-10px] bg-green500 text-green50 text-xs font-semibold rounded-xl py-1 px-2 w-6 h-5">
-                    5
+                  <span className="absolute top-[-10px] right-[-12px] bg-green500 text-green50 text-xs font-semibold rounded-xl py-1 px-2 w-6 h-5">
+                    ({getItemsCount()})
                   </span>
                 </div>
               </div>
@@ -147,8 +152,8 @@ export default function Navbar() {
                 width={20}
                 alt="cart"
               />
-              <span className="absolute top-[-10px] right-[-10px] bg-green500 text-green50 text-xs font-semibold rounded-xl py-1 px-2 w-6 h-5">
-                5
+              <span className="absolute top-[-10px] right-[-12px] bg-green500 text-green50 text-xs font-semibold rounded-xl py-1 px-2 w-6 h-5">
+                ({getItemsCount()})
               </span>
             </div>
           </button>
