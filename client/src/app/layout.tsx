@@ -5,7 +5,6 @@ import InfoBar from "@/components/InfoBar";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { CartProvider } from "@/components/CartProvider";
-import { Provider } from "react-redux";
 
 const inter = Inter({ subsets: ["latin"] });
 
